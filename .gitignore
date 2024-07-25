@@ -1,0 +1,4 @@
+.venv/
+get/module/__pycache__/
+deb/
+deb.db
