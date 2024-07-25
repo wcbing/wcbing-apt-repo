@@ -25,3 +25,4 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 |QQ|linuxqq|[官网](https://im.qq.com/linuxqq/)|
 |Clash Verge Rev|clash-verge|[Github Releses](https://github.com/clash-verge-rev/clash-verge-rev/releases)|
 |mihomo|mihomo|[Github Releases](https://github.com/MetaCubeX/mihomo/releases)|
+|hugo|hugo|[Github Releases](https://github.com/gohugoio/hugo/releases)|
