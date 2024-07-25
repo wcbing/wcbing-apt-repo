@@ -16,3 +16,10 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 ```
 
 接下来执行 `sudo apt update` 更新即可。
+
+
+## 现有软件
+
+|软件名|包名|渠道|
+|-|-|-|
+|QQ|linuxqq|[官网](https://im.qq.com/linuxqq/)|
