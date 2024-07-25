@@ -16,3 +16,11 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 ```
 
 接下来执行 `sudo apt update` 更新即可。
+
+## 现有软件
+
+|软件名|包名|渠道|
+|-|-|-|
+|QQ|linuxqq|[官网](https://im.qq.com/linuxqq/)|
+|Clash Verge Rev|clash-verge|[Github Releses](https://github.com/clash-verge-rev/clash-verge-rev/releases)|
+|mihomo|mihomo|[Github Releases](https://github.com/MetaCubeX/mihomo/releases)|
