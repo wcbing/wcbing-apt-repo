@@ -20,6 +20,8 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 
 ## 现有软件
 
+可在 [这里](https://deb.wcbing.top/status.txt) 查看具体版本。
+
 |软件名|包名|渠道|
 |-|-|-|
 |QQ|linuxqq|[官网](https://im.qq.com/linuxqq/)|
