@@ -1,5 +1,7 @@
 #!/bin/sh
 
+date
+
 # check for updates
 . .venv/bin/activate
 find get -maxdepth 1 -type f -name "*.py" -exec python3 {} \;

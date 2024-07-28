@@ -41,7 +41,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 默认只支持x86_64，需要其他架构请修改该代码的SQL语句。
 3. 创建一个**无密码**的 GPG 密钥对，导出 GPG 公钥文件待用。
 4. 创建定时任务，定时运行 `update_gen.sh`  
-crontab 样例：0 11,15,19 * * * cd [THIS_DIR] && ./update_gen.sh >> ./output
+crontab 样例：0 11,15,19 * * * cd [THIS_DIR] && ./update_gen.sh > ./deb/status.txt
 
 ### 发布与使用
 
