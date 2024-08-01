@@ -31,6 +31,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 |mihomo|mihomo|[Github Releases](https://github.com/MetaCubeX/mihomo/releases)|
 |hugo|hugo|[Github Releases](https://github.com/gohugoio/hugo/releases)|
 |RustDesk|rustdesk|[Github Releases](https://github.com/rustdesk/rustdesk/releases)|
+|Visual Studio Code|code|[官网](https://code.visualstudio.com)|
 
 
 ## 自行建立仓库
