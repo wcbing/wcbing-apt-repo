@@ -34,6 +34,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 |Visual Studio Code|code|[官网](https://code.visualstudio.com)|
 |Microsoft Edge|microsoft-edge-stable|[官网](https://www.microsoft.com/en-us/edge/download)|
 |Google Chrome|google-chrome-stable|[官网](https://www.google.com/chrome/)|
+|Obsidian|obsidian|[Github Releases](https://github.com/obsidianmd/obsidian-releases/releases)|
 
 
 ## 自行建立仓库
