@@ -33,6 +33,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 |RustDesk|rustdesk|[Github Releases](https://github.com/rustdesk/rustdesk/releases)|
 |Visual Studio Code|code|[官网](https://code.visualstudio.com)|
 |Microsoft Edge|microsoft-edge-stable|[官网](https://www.microsoft.com/en-us/edge/download)|
+|Google Chrome|google-chrome-stable|[官网](https://www.google.com/chrome/)|
 
 
 ## 自行建立仓库
