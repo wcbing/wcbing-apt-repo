@@ -10,9 +10,9 @@
 ## 使用现有仓库
 
 ```sh
-sudo curl -o /etc/apt/keyrings/wcbing.gpg https://deb.wcbing.top/wcbing.gpg
+sudo curl -o /etc/apt/keyrings/wcbing.gpg https://packages.wcbing.top/wcbing.gpg
 
-echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | sudo tee /etc/apt/sources.list.d/wcbing.list
+echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/deb /" | sudo tee /etc/apt/sources.list.d/wcbing.list
 ```
 
 接下来执行 `sudo apt update` 更新即可。
@@ -20,7 +20,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://deb.wcbing.top /" | s
 
 ## 现有软件
 
-可在 [这里](https://deb.wcbing.top/status.txt) 查看具体版本。
+可在 [这里](https://packages.wcbing.top/deb/status.txt) 查看具体版本。
 
 |软件名|包名|渠道|
 |-|-|-|
