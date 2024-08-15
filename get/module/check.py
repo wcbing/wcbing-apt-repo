@@ -3,8 +3,8 @@ import os
 import sqlite3
 
 
-def check_download(name, version, url, arch="x86_64"):
-    conn = sqlite3.connect("deb.db")
+def check_download(name, version, url, arch, file_type):
+    conn = sqlite3.connect(file_type + ".db")
     cur = conn.cursor()
 
     res = cur.execute(
@@ -17,11 +17,11 @@ def check_download(name, version, url, arch="x86_64"):
         if db_version != version:
             print("└  Update: " + db_version + " -> " + version)
             # remove old version
-            old_file_path = os.path.join("deb", str(db_url.split("/")[-1]))
+            old_file_path = os.path.join(file_type, str(db_url.split("/")[-1]))
             if os.path.exists(old_file_path):
                 os.remove(old_file_path)
             # download
-            file_path = os.path.join("deb", str(url.split("/")[-1]))
+            file_path = os.path.join(file_type, str(url.split("/")[-1]))
             with open(file_path, "wb") as fw:
                 fw.write(requests.get(url).content)
             # wirte to db
@@ -32,7 +32,7 @@ def check_download(name, version, url, arch="x86_64"):
     else:
         print(name + "\n└  Add: " + version)
         # download
-        file_path = os.path.join("deb", str(url.split("/")[-1]))
+        file_path = os.path.join(file_type, str(url.split("/")[-1]))
         with open(file_path, "wb") as fw:
             fw.write(requests.get(url).content)
         # wirte to db
@@ -44,3 +44,7 @@ def check_download(name, version, url, arch="x86_64"):
     cur.close()
     conn.commit()
     conn.close()
+
+
+def deb(name, version, url, arch="x86_64"):
+    check_download(name, version, url, arch=arch, file_type="deb")

@@ -1,5 +1,5 @@
 import requests
-from module.check import check_download
+from module.check import deb
 
 name = "clash-verge"
 
@@ -15,4 +15,4 @@ x64_deb_url = (
     release_url + "/download/" + vversion + "/" + name + "_" + version + "_amd64.deb"
 )
 
-check_download(name, version, x64_deb_url)
+deb(name, version, x64_deb_url)

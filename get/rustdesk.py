@@ -1,5 +1,5 @@
 import requests
-from module.check import check_download
+from module.check import deb
 
 name = "rustdesk"
 
@@ -14,4 +14,4 @@ x64_deb_url = (
     release_url + "/download/" + version + "/" + name + "-" + version + "-x86_64.deb"
 )
 
-check_download(name, version, x64_deb_url)
+deb(name, version, x64_deb_url)

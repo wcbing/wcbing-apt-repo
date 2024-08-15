@@ -1,6 +1,6 @@
 import requests
 import json
-from module.check import check_download
+from module.check import deb
 
 """
 https://meeting.tencent.com/web-service/query-download-info?q=[\
@@ -25,4 +25,4 @@ version = download_list["info-list"][0]["version"]
 x64_deb_url = download_list["info-list"][0]["url"]
 # print(version, x64_deb_url)
 
-check_download("wemeet", version, x64_deb_url)
+deb("wemeet", version, x64_deb_url)

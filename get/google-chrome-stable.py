@@ -1,6 +1,6 @@
 import requests
 import json
-from module.check import check_download
+from module.check import deb
 
 version_url = "https://versionhistory.googleapis.com/v1/chrome/platforms/linux/channels/stable/versions"
 res = requests.get(version_url)
@@ -9,4 +9,4 @@ version = json.loads(res.text)["versions"][0]["version"]
 
 x64_deb_url = "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 
-check_download("google-chrome-stable", version, x64_deb_url)
+deb("google-chrome-stable", version, x64_deb_url)

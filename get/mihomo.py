@@ -1,5 +1,5 @@
 import requests
-from module.check import check_download
+from module.check import deb
 
 name = "mihomo"
 
@@ -16,4 +16,4 @@ x64_deb_url = (
     + name + "-linux-amd64-compatible-" + vversion + ".deb"
 )
 
-check_download(name, version, x64_deb_url)
+deb(name, version, x64_deb_url)

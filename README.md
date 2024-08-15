@@ -43,7 +43,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 
 1. clone 本仓库，进入仓库目录。
 2. 确认系统安装有 `Requests` Python 库，Debian 系应该自带。
-2. 运行 `init.py` 初始化。  
+2. 运行 `init_deb.py` 初始化。  
 默认只新建 x86_64，需要其他架构请修改其中的SQL语句。
 3. 创建一个**无密码**的 GPG 密钥对，导出 GPG 公钥文件待用。
 4. 创建定时任务，定时运行 `update_gen.sh`  

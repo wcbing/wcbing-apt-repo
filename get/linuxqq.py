@@ -1,7 +1,7 @@
 import requests
 import re
 import json
-from module.check import check_download
+from module.check import deb
 
 res = requests.get("https://im.qq.com/rainbow/linuxQQDownload")
 res.encoding = "utf-8"
@@ -15,4 +15,4 @@ version = download_list["version"]
 x64_deb_url = download_list["x64DownloadUrl"]["deb"]
 # print(version, x64_deb_url)
 
-check_download("linuxqq", version, x64_deb_url)
+deb("linuxqq", version, x64_deb_url)
