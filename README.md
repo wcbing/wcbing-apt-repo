@@ -56,3 +56,25 @@ crontab 样例：0 11,15,19 * * * cd [THIS_DIR] && ./update_gen.sh > ./deb/statu
 这个仓库使用了[扁平仓库格式（Flat Repository Format）](https://wiki.debian.org/DebianRepository/Format#Flat_Repository_Format)。建立好后使用 Web 服务器将 `deb` 目录暴露出去即可。
 
 使用时可参考前面已有的配置，先将第3部提到的 GPG 公钥导入，再新建软件源配置文件。
+
+实际使用中官网提供的下载链接一般是 CDN 链接，为提升下载速度，减轻自建源压力，建议将这些请求重定向到官网上。而国内下载 Github 上的文件时比较慢，仍然从自建源下载。
+
+nginx 配置参考：
+```nginx
+server {
+    server_name packages.wcbing.top;
+    autoindex on;
+    autoindex_exact_size off;
+    autoindex_localtime on;
+    charset 'utf-8';
+    location ~ ^/deb/https:/github.com {
+        root /packages;
+    }
+    location ~ ^/deb/https:/(.+)$ {
+        return 302 https://$1;
+    }
+    location / { 
+        root /packages;
+    }
+}
+```

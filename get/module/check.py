@@ -4,7 +4,10 @@ import sqlite3
 
 
 def download(url, file_type):
-    file_path = os.path.join(file_type, str(url.split("/")[-1]))
+    file_dir = os.path.join(file_type, "/".join(url.split("/")[:-1]))
+    if not os.path.exists(file_dir):
+        os.makedirs(file_dir)
+    file_path = os.path.join(file_type, url)
     with requests.get(url, stream=True) as res:
         with open(file_path, "wb") as fw:
             for chunk in res.iter_content(chunk_size=8192):
@@ -32,7 +35,7 @@ def check_download(name, version, url, arch, file_type):
                 (version, url, name),
             )
             # remove old version
-            old_file_path = os.path.join(file_type, str(db_url.split("/")[-1]))
+            old_file_path = os.path.join(file_type, db_url)
             if os.path.exists(old_file_path):
                 os.remove(old_file_path)
     else:
