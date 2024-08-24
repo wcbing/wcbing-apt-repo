@@ -28,6 +28,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |QQ音乐|qqmusic|[官网](https://y.qq.com/download/download.html)|
 |腾讯会议|wemeet|[官网](https://meeting.tencent.com/download/)|
 |Clash Verge Rev|clash-verge|[Github Releses](https://github.com/clash-verge-rev/clash-verge-rev/releases)|
+|FlClash|flclash|[Github Releses](https://github.com/chen08209/FlClash/releases)|
 |mihomo|mihomo|[Github Releases](https://github.com/MetaCubeX/mihomo/releases)|
 |hugo|hugo|[Github Releases](https://github.com/gohugoio/hugo/releases)|
 |RustDesk|rustdesk|[Github Releases](https://github.com/rustdesk/rustdesk/releases)|
