@@ -11,7 +11,7 @@ download_list_json = re.search(
 ).group(1)
 download_list = json.loads(download_list_json)
 
-version = download_list["version"]
+version = download_list["version"] + "_" + download_list["updateDate"]
 x64_deb_url = download_list["x64DownloadUrl"]["deb"]
 # print(version, x64_deb_url)
 
