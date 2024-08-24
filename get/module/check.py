@@ -16,10 +16,6 @@ def check_download(name, version, url, arch, file_type):
         print(name + ": " + db_version)
         if db_version != version:
             print("└  Update: " + db_version + " -> " + version)
-            # remove old version
-            old_file_path = os.path.join(file_type, str(db_url.split("/")[-1]))
-            if os.path.exists(old_file_path):
-                os.remove(old_file_path)
             # download
             file_path = os.path.join(file_type, str(url.split("/")[-1]))
             with open(file_path, "wb") as fw:
@@ -29,6 +25,10 @@ def check_download(name, version, url, arch, file_type):
                 "UPDATE " + arch + " SET version = ?, url = ? WHERE name = ?",
                 (version, url, name),
             )
+            # remove old version
+            old_file_path = os.path.join(file_type, str(db_url.split("/")[-1]))
+            if os.path.exists(old_file_path):
+                os.remove(old_file_path)
     else:
         print(name + "\n└  Add: " + version)
         # download
