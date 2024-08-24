@@ -3,6 +3,15 @@ import os
 import sqlite3
 
 
+def download(url, file_type):
+    file_path = os.path.join(file_type, str(url.split("/")[-1]))
+    with requests.get(url, stream=True) as res:
+        with open(file_path, "wb") as fw:
+            for chunk in res.iter_content(chunk_size=8192):
+                if chunk:
+                    fw.write(chunk)
+
+
 def check_download(name, version, url, arch, file_type):
     conn = sqlite3.connect(file_type + ".db")
     cur = conn.cursor()
@@ -16,10 +25,7 @@ def check_download(name, version, url, arch, file_type):
         print(name + ": " + db_version)
         if db_version != version:
             print("└  Update: " + db_version + " -> " + version)
-            # download
-            file_path = os.path.join(file_type, str(url.split("/")[-1]))
-            with open(file_path, "wb") as fw:
-                fw.write(requests.get(url).content)
+            download(url, file_type)
             # wirte to db
             cur.execute(
                 "UPDATE " + arch + " SET version = ?, url = ? WHERE name = ?",
@@ -31,10 +37,7 @@ def check_download(name, version, url, arch, file_type):
                 os.remove(old_file_path)
     else:
         print(name + "\n└  Add: " + version)
-        # download
-        file_path = os.path.join(file_type, str(url.split("/")[-1]))
-        with open(file_path, "wb") as fw:
-            fw.write(requests.get(url).content)
+        download(url, file_type)
         # wirte to db
         cur.execute(
             "INSERT INTO " + arch + "(name, version, url) VALUES (?, ?, ?)",
