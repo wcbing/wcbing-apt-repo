@@ -36,6 +36,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |Google Chrome|google-chrome-stable|[官网](https://www.google.com/chrome/)|
 |Obsidian|obsidian|[Github Releases](https://github.com/obsidianmd/obsidian-releases/releases)|
 |WPS Office|wps-office|[官网](https://linux.wps.cn/)|
+|百度网盘|baidunetdisk|[官网](https://pan.baidu.com/download)|
 
 
 ## 自行建立仓库
