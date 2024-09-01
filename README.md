@@ -38,6 +38,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |Obsidian|obsidian|[Github Releases](https://github.com/obsidianmd/obsidian-releases/releases)|
 |WPS Office|wps-office|[官网](https://linux.wps.cn/)|
 |百度网盘|baidunetdisk|[官网](https://pan.baidu.com/download)|
+|钉钉|com.alibabainc.dingtalk|[官网](https://www.dingtalk.com/download/)|
 
 
 ## 自行建立仓库
