@@ -39,6 +39,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |WPS Office|wps-office|[官网](https://linux.wps.cn/)|
 |百度网盘|baidunetdisk|[官网](https://pan.baidu.com/download)|
 |钉钉|com.alibabainc.dingtalk|[官网](https://www.dingtalk.com/download/)|
+|飞书|bytedance-feishu-stable|[官网](https://www.feishu.cn/download)|
 
 
 ## 自行建立仓库
