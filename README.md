@@ -35,7 +35,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |RustDesk|rustdesk|[Github Releases](https://github.com/rustdesk/rustdesk/releases)|
 |Visual Studio Code|code|[官网](https://code.visualstudio.com)|
 |Microsoft Edge|microsoft-edge-stable|[官网](https://www.microsoft.com/en-us/edge/download)|
-|Google Chrome|google-chrome-stable|[官网](https://www.google.com/chrome/)|
+|Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable|官方仓库|
 |Obsidian|obsidian|[Github Releases](https://github.com/obsidianmd/obsidian-releases/releases)|
 |WPS Office|wps-office|[官网](https://linux.wps.cn/)|
 |百度网盘|baidunetdisk|[官网](https://pan.baidu.com/download)|
