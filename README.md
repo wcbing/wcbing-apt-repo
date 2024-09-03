@@ -43,6 +43,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |飞书|bytedance-feishu-stable|[官网](https://www.feishu.cn/download)|
 |termius|termius-app<br />termius-beta|官方仓库|
 |Sublime Text|sublime-text|[官网](https://www.sublimetext.com/download)|
+|Xmind|xmind-vana|[官网](https://xmind.cn/download/)|
 
 
 ## 自行建立仓库
