@@ -10,7 +10,8 @@ apt-ftparchive packages . > Packages
 
 # merge the Packages files of third-party repositories
 cd ..
-find merge -maxdepth 1 -type f -name "*.py" -exec python3 {} \;
+find merge_latest -maxdepth 1 -type f -name "*.py" -exec python3 {} \;
+python3 merge_all/merge_all.py
 
 # generate the Release file
 cd deb

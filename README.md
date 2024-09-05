@@ -44,6 +44,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |termius|termius-app<br />termius-beta|官方仓库|
 |Sublime Text|sublime-text|[官网](https://www.sublimetext.com/download)|
 |Xmind|xmind-vana|[官网](https://xmind.cn/download/)|
+|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly<br />|官方仓库|
 
 
 ## 自行建立仓库
