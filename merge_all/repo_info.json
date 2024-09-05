@@ -1,0 +1,12 @@
+[
+    {
+        "name": "google-chrome",
+        "repo": "https://dl.google.com/linux/chrome/deb/",
+        "amd64_path": "dists/stable/main/binary-amd64/Packages"
+    },
+    {
+        "name": "termius",
+        "repo": "https://deb.termius.com/",
+        "amd64_path": "dists/squeeze/main/binary-amd64/Packages"
+    }
+]
