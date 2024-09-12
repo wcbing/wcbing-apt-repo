@@ -7,7 +7,7 @@ def download(url, file_type):
     file_dir = os.path.join(file_type, "/".join(url.split("/")[:-1]))
     if not os.path.exists(file_dir):
         os.makedirs(file_dir)
-    file_path = os.path.join(file_type, url)
+    file_path = os.path.join(file_type, url.split("?")[0])
     with requests.get(url, stream=True) as res:
         with open(file_path, "wb") as fw:
             for chunk in res.iter_content(chunk_size=8192):
@@ -35,7 +35,7 @@ def check_download(name, version, url, arch, file_type):
                 (version, url, name),
             )
             # remove old version
-            old_file_path = os.path.join(file_type, db_url)
+            old_file_path = os.path.join(file_type, db_url.split("?")[0])
             if os.path.exists(old_file_path):
                 os.remove(old_file_path)
     else:
