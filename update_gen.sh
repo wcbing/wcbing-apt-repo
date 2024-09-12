@@ -13,8 +13,10 @@ cd ..
 find merge_latest -maxdepth 1 -type f -name "*.py" -exec python3 {} \;
 python3 merge_all/merge_all.py
 
-# generate the Release file
 cd deb
+# list brief information about packages
+cat Packages | grep "Package\|Version\|Architecture\|^\$" > version.txt
+# generate the Release file
 apt-ftparchive release . > Release
 gpg --yes --armor --detach-sign --sign -o Release.gpg Release
 gpg --yes --clearsign -o InRelease Release

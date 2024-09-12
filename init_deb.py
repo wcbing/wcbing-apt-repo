@@ -4,7 +4,8 @@ import os
 import sqlite3
 
 # create dir
-os.mkdir("deb")
+if not os.path.exists("deb"):
+    os.mkdir("deb")
 
 # create table
 conn = sqlite3.connect("deb.db")

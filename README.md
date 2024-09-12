@@ -21,7 +21,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 
 ## 现有软件
 
-可在 [这里](https://packages.wcbing.top/deb/status.txt) 查看具体版本。
+可在 [这里](https://packages.wcbing.top/deb/version.txt) 查看具体版本。
 
 |软件名|包名|渠道|架构|
 |-|-|-|-|
@@ -47,42 +47,6 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly<br />|官方仓库|x86_64|
 
 
-## 自行建立仓库
+## 自建仓库
 
-### 建立仓库
-
-1. clone 本仓库，进入仓库目录。
-2. 确认系统安装有 `Requests` Python 库，Debian 系应该自带。
-2. 运行 `init_deb.py` 初始化。  
-默认只新建 x86_64，需要其他架构请修改其中的SQL语句。
-3. 创建一个**无密码**的 GPG 密钥对，导出 GPG 公钥文件待用。
-4. 创建定时任务，定时运行 `update_gen.sh`  
-crontab 样例：0 11,15,19 * * * cd [THIS_DIR] && ./update_gen.sh > ./deb/status.txt
-
-### 发布与使用
-
-这个仓库使用了[扁平仓库格式（Flat Repository Format）](https://wiki.debian.org/DebianRepository/Format#Flat_Repository_Format)。建立好后使用 Web 服务器将 `deb` 目录暴露出去即可。
-
-使用时可参考前面已有的配置，先将第3部提到的 GPG 公钥导入，再新建软件源配置文件。
-
-实际使用中官网提供的下载链接一般是 CDN 链接，为提升下载速度，减轻自建源压力，建议将这些请求重定向到官网上。而国内下载 Github 上的文件时比较慢，仍然从自建源下载。
-
-nginx 配置参考：
-```nginx
-server {
-    server_name packages.wcbing.top;
-    autoindex on;
-    autoindex_exact_size off;
-    autoindex_localtime on;
-    charset 'utf-8';
-    location ~ ^/deb/https:/github.com {
-        root /packages;
-    }
-    location ~ ^/deb/https:/(.+)$ {
-        return 302 https://$1;
-    }
-    location / { 
-        root /packages;
-    }
-}
-```
+[参见 Wiki](https://github.com/wcbing/wcbing-apt-repo/wiki/self-hosting)

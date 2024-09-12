@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wcbing 的 APT 软件源</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        a {
+            color: #4096ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>wcbing 的 APT 软件源</h1>
+    <a href="https://github.com/wcbing/wcbing-apt-repo">项目地址</a><br />
+    <a href="./version.txt">查看包版本信息</a>（<a href="./Packages">所有信息</a>）<br />
+    <a href="./status.txt">查看状态日志</a><br />
+    <h2>用法</h2>
+    <p>sudo curl -o /etc/apt/keyrings/wcbing.gpg https://packages.wcbing.top/wcbing.gpg<br />
+        echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/deb /" | sudo tee
+        /etc/apt/sources.list.d/wcbing.list</p>
+</body>
+
+</html>

@@ -1,3 +1,4 @@
-get/module/__pycache__/
-deb/
+*/module/__pycache__/
+deb/*
+!deb/index.html
 deb.db
