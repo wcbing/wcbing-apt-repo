@@ -44,6 +44,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |飞书|bytedance-feishu-stable|[官网](https://www.feishu.cn/download)|
 |Xmind|xmind-vana|[官网](https://xmind.cn/download/)|
 |draw.io|draw.io|[Github Releases](https://github.com/jgraph/drawio-desktop/releases)|
+|uTools|utools|[官网](https://u.tools/download/)|
 
 ### 合并自官方 repo
 
