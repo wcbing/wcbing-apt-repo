@@ -8,5 +8,10 @@
         "name": "termius",
         "repo": "https://deb.termius.com/",
         "amd64_path": "dists/squeeze/main/binary-amd64/Packages"
+    },
+    {
+        "name": "steam",
+        "repo": "https://repo.steampowered.com/steam/dists/stable/steam/binary-amd64/Packages",
+        "amd64_path": "dists/stable/steam/binary-amd64/Packages"
     }
 ]
