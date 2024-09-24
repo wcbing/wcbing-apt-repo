@@ -11,7 +11,7 @@
     },
     {
         "name": "steam",
-        "repo": "https://repo.steampowered.com/steam/dists/stable/steam/binary-amd64/Packages",
+        "repo": "https://repo.steampowered.com/steam/",
         "amd64_path": "dists/stable/steam/binary-amd64/Packages"
     }
 ]

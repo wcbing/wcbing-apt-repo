@@ -20,7 +20,8 @@ repo info json format:
 
 # get version info from repo
 for i in github_info_list:
-    release_url = f"https://github.com/{i["repo"]}/releases/"
+    repo = i["repo"]
+    release_url = f"https://github.com/{repo}/releases/"
     latest_req = requests.head(release_url + "latest")
     vversion = latest_req.headers["Location"].split("/")[-1]  # v1.1.1
     version = vversion[1:]  # 1.1.1
