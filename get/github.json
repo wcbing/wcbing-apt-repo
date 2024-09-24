@@ -28,5 +28,10 @@
         "name": "rustdesk",
         "repo": "rustdesk/rustdesk",
         "x64_deb_name": "{vversion}/rustdesk-{vversion}-x86_64.deb"
+    },
+    {
+        "name": "draw.io",
+        "repo": "jgraph/drawio-desktop",
+        "x64_deb_name": "{vversion}/drawio-amd64-{version}.deb"
     }
 ]
