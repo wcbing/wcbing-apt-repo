@@ -1,0 +1,3 @@
+[submodule "merge"]
+	path = merge
+	url = https://github.com/wcbing/merge-apt-repo

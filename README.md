@@ -35,8 +35,6 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |mihomo|mihomo|[Github Releases](https://github.com/MetaCubeX/mihomo/releases)|
 |hugo|hugo|[Github Releases](https://github.com/gohugoio/hugo/releases)|
 |RustDesk|rustdesk|[Github Releases](https://github.com/rustdesk/rustdesk/releases)|
-|Visual Studio Code|code|[官网](https://code.visualstudio.com)|
-|Microsoft Edge|microsoft-edge-stable|[官网](https://www.microsoft.com/en-us/edge/download)|
 |Obsidian|obsidian|[Github Releases](https://github.com/obsidianmd/obsidian-releases/releases)|
 |WPS Office|wps-office|[官网](https://linux.wps.cn/)|
 |百度网盘|baidunetdisk|[官网](https://pan.baidu.com/download)|
@@ -49,13 +47,17 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 
 ### 合并自官方 repo
 
-|软件名|包名|渠道|架构|
-|-|-|-|-|
-|Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable|官方仓库|x86_64|
-|termius|termius-app<br />termius-beta|官方仓库|x86_64|
-|Sublime Text<br />Sublime Merge|sublime-text<br />sublime-merge|官方仓库|x86_64, arm64|
-|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly<br />|官方仓库|x86_64|
-|Steam|steam-launcher<br />steam-libs-amd64|官方仓库|x86_64|
+|软件名|包名|
+|-|-|
+|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly|
+|Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable|
+|Microsoft Edge|microsoft-edge-stable<br />microsoft-edge-beta<br />microsoft-edge-dev|
+|Visual Studio Code|code<br />code-insiders<br />code-exploration|
+|termius|termius-app<br />termius-beta|
+|Sublime Text<br />Sublime Merge|sublime-text<br />sublime-merge|
+|Steam|steam-launcher<br />steam-libs-amd64|
+|Tailscale|tailscale<br />tailscale-nginx-auth|
+
 
 ## 自建仓库
 

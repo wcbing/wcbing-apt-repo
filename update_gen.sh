@@ -10,8 +10,7 @@ apt-ftparchive packages . > Packages
 
 # merge the Packages files of third-party repositories
 cd ..
-find merge_latest -maxdepth 1 -type f -name "*.py" -exec python3 {} \;
-python3 merge_all/merge_all.py
+./merge-apt-repo
 
 cd deb
 # list brief information about packages
