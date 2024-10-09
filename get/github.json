@@ -2,41 +2,41 @@
     {
         "name": "hugo",
         "repo": "gohugoio/hugo",
-        "x64_deb_name": "{vversion}/hugo_{version}_linux-amd64.deb"
+        "x64_deb_name": "{version_tag}/hugo_{stripped_version}_linux-amd64.deb"
     },
     {
         "name": "flclash",
         "repo": "chen08209/FlClash",
-        "x64_deb_name": "{vversion}/FlClash-{version}-linux-amd64.deb"
+        "x64_deb_name": "{version_tag}/FlClash-{stripped_version}-linux-amd64.deb"
     },
     {
         "name": "clash-verge",
         "repo": "clash-verge-rev/clash-verge-rev",
-        "x64_deb_name": "{vversion}/clash-verge_{version}_amd64.deb"
+        "x64_deb_name": "{version_tag}/clash-verge_{stripped_version}_amd64.deb"
     },
     {
         "name": "mihomo",
         "repo": "MetaCubeX/mihomo",
-        "x64_deb_name": "{vversion}/mihomo-linux-amd64-compatible-{vversion}.deb"
+        "x64_deb_name": "{version_tag}/mihomo-linux-amd64-compatible-{version_tag}.deb"
     },
     {
         "name": "obsidian",
         "repo": "obsidianmd/obsidian-releases",
-        "x64_deb_name": "{vversion}/obsidian_{version}_amd64.deb"
+        "x64_deb_name": "{version_tag}/obsidian_{stripped_version}_amd64.deb"
     },
     {
         "name": "rustdesk",
         "repo": "rustdesk/rustdesk",
-        "x64_deb_name": "{vversion}/rustdesk-{vversion}-x86_64.deb"
+        "x64_deb_name": "{version_tag}/rustdesk-{version_tag}-x86_64.deb"
     },
     {
         "name": "draw.io",
         "repo": "jgraph/drawio-desktop",
-        "x64_deb_name": "{vversion}/drawio-amd64-{version}.deb"
+        "x64_deb_name": "{version_tag}/drawio-amd64-{stripped_version}.deb"
     },
     {
         "name": "Tabby",
         "repo": "Eugeny/tabby",
-        "x64_deb_name": "{vversion}/tabby-{version}-linux-x64.deb"
+        "x64_deb_name": "{version_tag}/tabby-{stripped_version}-linux-x64.deb"
     }
 ]
