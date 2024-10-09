@@ -43,5 +43,10 @@
         "name": "Pandoc",
         "repo": "jgm/pandoc",
         "x64_deb_name": "{version_tag}/pandoc-{stripped_version}-1-amd64.deb"
+    },
+    {
+        "name": "TinyGo",
+        "repo": "tinygo-org/tinygo",
+        "x64_deb_name": "{version_tag}/tinygo_{stripped_version}_amd64.deb"
     }
 ]
