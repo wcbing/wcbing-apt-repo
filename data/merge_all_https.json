@@ -13,5 +13,10 @@
         "name": "steam",
         "repo": "https://repo.steampowered.com/steam/",
         "amd64_path": "dists/stable/steam/binary-amd64/Packages"
+    },
+    {
+        "name": "black-desk",
+        "repo": "https://github.com/black-desk/debs/releases/latest/download/",
+        "amd64_path": "Packages"
     }
 ]

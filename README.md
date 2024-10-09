@@ -3,7 +3,7 @@
 供 Debian 系发行版用户使用的软件源，收集一些国内常用软件的二进制包。
 
 收录的软件说明：
-- 发布的是已打包的文件，不接受第三方自行打包。
+- 发布的是已打包的文件 ~~，不接受第三方自行打包~~。
 - 有固定的更新地址，如官网、官方仓库或 Github Releases。
 - 本仓库对于国内网络下载不受限的软件不提供文件托管服务，仅提供链接重定向功能，最终效果类似 winget。
 - 现只收录了 x86_64，如有需要请参考最后一节自行建立仓库。
@@ -50,7 +50,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 
 ### 合并自官方 repo
 
-|软件名|包名|
+|软件仓库|包名|
 |-|-|
 |Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly|
 |Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable|
@@ -60,6 +60,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |Sublime Text<br />Sublime Merge|sublime-text<br />sublime-merge|
 |Steam|steam-launcher<br />steam-libs-amd64|
 |Tailscale|tailscale<br />tailscale-nginx-auth|
+|[black-desk 打包](https://github.com/black-desk/debs)|app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta<br />org.pimalaya.himalaya|
 
 
 ## 自建仓库
