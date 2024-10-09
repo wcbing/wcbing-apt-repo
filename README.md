@@ -44,6 +44,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |draw.io|draw.io|[Github Releases](https://github.com/jgraph/drawio-desktop/releases)|
 |uTools|utools|[官网](https://u.tools/download/)|
 |360安全浏览器|browser360-cn-stable|[官网](https://browser.360.net/gc/)|
+|Tabby|tabby-terminal|[Github Releases](https://github.com/Eugeny/tabby/releases)|
 
 ### 合并自官方 repo
 

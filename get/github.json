@@ -33,5 +33,10 @@
         "name": "draw.io",
         "repo": "jgraph/drawio-desktop",
         "x64_deb_name": "{vversion}/drawio-amd64-{version}.deb"
+    },
+    {
+        "name": "Tabby",
+        "repo": "Eugeny/tabby",
+        "x64_deb_name": "{vversion}/tabby-{version}-linux-x64.deb"
     }
 ]
