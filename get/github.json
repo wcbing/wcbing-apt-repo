@@ -48,5 +48,10 @@
         "name": "tinygo",
         "repo": "tinygo-org/tinygo",
         "x64_deb_name": "{version_tag}/tinygo_{stripped_version}_amd64.deb"
+    },
+    {
+        "name": "chezmoi",
+        "repo": "twpayne/chezmoi",
+        "x64_deb_name": "{version_tag}/chezmoi_{stripped_version}_linux_amd64.deb"
     }
 ]
