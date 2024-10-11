@@ -35,17 +35,17 @@
         "x64_deb_name": "{version_tag}/drawio-amd64-{stripped_version}.deb"
     },
     {
-        "name": "Tabby",
+        "name": "tabby",
         "repo": "Eugeny/tabby",
         "x64_deb_name": "{version_tag}/tabby-{stripped_version}-linux-x64.deb"
     },
     {
-        "name": "Pandoc",
+        "name": "pandoc",
         "repo": "jgm/pandoc",
-        "x64_deb_name": "{version_tag}/pandoc-{stripped_version}-1-amd64.deb"
+        "x64_deb_name": "{version_tag}/pandoc-{version_tag}-1-amd64.deb"
     },
     {
-        "name": "TinyGo",
+        "name": "tinygo",
         "repo": "tinygo-org/tinygo",
         "x64_deb_name": "{version_tag}/tinygo_{stripped_version}_amd64.deb"
     }
