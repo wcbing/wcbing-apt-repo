@@ -46,7 +46,8 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |360安全浏览器|browser360-cn-stable|[官网](https://browser.360.net/gc/)|
 |Tabby|tabby-terminal|[Github Releases](https://github.com/Eugeny/tabby/releases)|
 |Pandoc|pandoc|[Github Releases](https://github.com/jgm/pandoc/releases)|
-|TinyGo|tinygo|[Github Releases](https://github.com/tinygo-org/tinygo/releases/)|
+|TinyGo|tinygo|[Github Releases](https://github.com/tinygo-org/tinygo/releases)|
+|LocalSend|localsend|[Github Releases](https://github.com/localsend/localsend/releases)|
 
 ### 合并自官方 repo
 

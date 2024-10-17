@@ -53,5 +53,10 @@
         "name": "chezmoi",
         "repo": "twpayne/chezmoi",
         "x64_deb_name": "{version_tag}/chezmoi_{stripped_version}_linux_amd64.deb"
+    },
+    {
+        "name": "localsend",
+        "repo": "localsend/localsend",
+        "x64_deb_name": "{version_tag}/LocalSend-{stripped_version}-linux-x86-64.deb"
     }
 ]
