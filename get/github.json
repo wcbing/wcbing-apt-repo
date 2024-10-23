@@ -58,5 +58,10 @@
         "name": "localsend",
         "repo": "localsend/localsend",
         "x64_deb_name": "{version_tag}/LocalSend-{stripped_version}-linux-x86-64.deb"
+    },
+    {
+        "name": "motrix",
+        "repo": "agalwood/Motrix",
+        "x64_deb_name": "{version_tag}/Motrix_{stripped_version}_amd64.deb"
     }
 ]
