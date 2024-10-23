@@ -49,6 +49,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |TinyGo|tinygo|[Github Releases](https://github.com/tinygo-org/tinygo/releases)|
 |LocalSend|localsend|[Github Releases](https://github.com/localsend/localsend/releases)|
 |Motrix|motrix|[Github Releases](https://github.com/agalwood/Motrix/releases)|
+|滴答清单|dida|[官网](https://dida365.com/download)
 
 ### 合并自官方 repo
 
