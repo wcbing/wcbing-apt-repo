@@ -1,5 +1,4 @@
 {
     "packages_https": "deb/Packages",
-    "merge_all_https": "data/merge_all_https.json",
-    "merge_latest_https": "data/merge_latest_https.json"
+    "repo_list_https": "data/repo_list_https.json"
 }
