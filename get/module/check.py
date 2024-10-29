@@ -1,4 +1,4 @@
-import requests
+import subprocess
 import os
 import sqlite3
 
@@ -8,11 +8,7 @@ def download(url, file_type):
     if not os.path.exists(file_dir):
         os.makedirs(file_dir)
     file_path = os.path.join(file_type, url.split("?")[0])
-    with requests.get(url, stream=True) as res:
-        with open(file_path, "wb") as fw:
-            for chunk in res.iter_content(chunk_size=8192):
-                if chunk:
-                    fw.write(chunk)
+    subprocess.run(["curl", "-fsLo", file_path, url])
 
 
 def check_download(name, version, url, arch, file_type):
