@@ -1,0 +1,80 @@
+{
+    "clash-verge": {
+        "repo": "clash-verge-rev/clash-verge-rev",
+        "file_list": [
+            "clash-verge_{stripped_version}_amd64.deb"
+        ]
+    },
+    "mihomo": {
+        "repo": "MetaCubeX/mihomo",
+        "file_list": [
+            "mihomo-linux-amd64-compatible-{version_tag}.deb"
+        ]
+    },
+    "flclash": {
+        "repo": "chen08209/FlClash",
+        "file_list": [
+            "FlClash-{stripped_version}-linux-amd64.deb"
+        ]
+    },
+    "hugo": {
+        "repo": "gohugoio/hugo",
+        "file_list": [
+            "hugo_{stripped_version}_linux-amd64.deb"
+        ]
+    },
+    "rustdesk": {
+        "repo": "rustdesk/rustdesk",
+        "file_list": [
+            "rustdesk-{version_tag}-x86_64.deb"
+        ]
+    },
+    "obsidian": {
+        "repo": "obsidianmd/obsidian-releases",
+        "file_list": [
+            "obsidian_{stripped_version}_amd64.deb"
+        ]
+    },
+    "draw.io": {
+        "repo": "jgraph/drawio-desktop",
+        "file_list": [
+            "drawio-amd64-{stripped_version}.deb"
+        ]
+    },
+    "tabby": {
+        "repo": "Eugeny/tabby",
+        "file_list": [
+            "tabby-{stripped_version}-linux-x64.deb"
+        ]
+    },
+    "pandoc": {
+        "repo": "jgm/pandoc",
+        "file_list": [
+            "pandoc-{version_tag}-1-amd64.deb"
+        ]
+    },
+    "tinygo": {
+        "repo": "tinygo-org/tinygo",
+        "file_list": [
+            "tinygo_{stripped_version}_amd64.deb"
+        ]
+    },
+    "chezmoi": {
+        "repo": "twpayne/chezmoi",
+        "file_list": [
+            "chezmoi_{stripped_version}_linux_amd64.deb"
+        ]
+    },
+    "localsend": {
+        "repo": "localsend/localsend",
+        "file_list": [
+            "LocalSend-{stripped_version}-linux-x86-64.deb"
+        ]
+    },
+    "motrix": {
+        "repo": "agalwood/Motrix",
+        "file_list": [
+            "Motrix_{stripped_version}_amd64.deb"
+        ]
+    }
+}

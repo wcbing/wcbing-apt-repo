@@ -1,18 +1,18 @@
 #!/bin/sh
 
-# check for updates
 date
+# merge the Packages files of third-party repositories
+rm deb/Packages
+merge-apt-repo
+
+# check for updates
+github-downloader -r
 find get -maxdepth 1 -type f -name "*.py" -exec python3 {} \;
 
 # generate the files
 cd deb
-apt-ftparchive packages . > Packages
+apt-ftparchive packages . >> Packages
 
-# merge the Packages files of third-party repositories
-cd ..
-./merge-apt-repo
-
-cd deb
 # list brief information about packages
 cat Packages | grep "Package\|Version\|Architecture\|^\$" > version.txt
 # generate the Release file

@@ -25,31 +25,36 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 
 ### 自行收集
 
-|软件名|包名|渠道|
+|软件名|包名|地址|
 |-|-|-|
 |QQ|linuxqq|[官网](https://im.qq.com/linuxqq/)|
 |QQ音乐|qqmusic|[官网](https://y.qq.com/download/download.html)|
 |腾讯会议|wemeet|[官网](https://meeting.tencent.com/download/)|
+|WPS Office|wps-office|[官网](https://linux.wps.cn/)|
+|百度网盘|baidunetdisk|[官网](https://pan.baidu.com/download)|
+|钉钉|com.alibabainc.dingtalk|[官网](https://www.dingtalk.com/download/)|
+|飞书|bytedance-feishu-stable|[官网](https://www.feishu.cn/download)|
+|Xmind|xmind-vana|[官网](https://xmind.cn/download/)|
+|uTools|utools|[官网](https://u.tools/download/)|
+|360安全浏览器|browser360-cn-stable|[官网](https://browser.360.net/gc/)|
+|滴答清单|dida|[官网](https://dida365.com/download)|
+
+### Github Releses
+
+|软件名|包名|地址|
+|-|-|-|
 |Clash Verge Rev|clash-verge|[Github Releses](https://github.com/clash-verge-rev/clash-verge-rev/releases)|
 |FlClash|flclash|[Github Releses](https://github.com/chen08209/FlClash/releases)|
 |mihomo|mihomo|[Github Releases](https://github.com/MetaCubeX/mihomo/releases)|
 |hugo|hugo|[Github Releases](https://github.com/gohugoio/hugo/releases)|
 |RustDesk|rustdesk|[Github Releases](https://github.com/rustdesk/rustdesk/releases)|
 |Obsidian|obsidian|[Github Releases](https://github.com/obsidianmd/obsidian-releases/releases)|
-|WPS Office|wps-office|[官网](https://linux.wps.cn/)|
-|百度网盘|baidunetdisk|[官网](https://pan.baidu.com/download)|
-|钉钉|com.alibabainc.dingtalk|[官网](https://www.dingtalk.com/download/)|
-|飞书|bytedance-feishu-stable|[官网](https://www.feishu.cn/download)|
-|Xmind|xmind-vana|[官网](https://xmind.cn/download/)|
 |draw.io|draw.io|[Github Releases](https://github.com/jgraph/drawio-desktop/releases)|
-|uTools|utools|[官网](https://u.tools/download/)|
-|360安全浏览器|browser360-cn-stable|[官网](https://browser.360.net/gc/)|
 |Tabby|tabby-terminal|[Github Releases](https://github.com/Eugeny/tabby/releases)|
 |Pandoc|pandoc|[Github Releases](https://github.com/jgm/pandoc/releases)|
 |TinyGo|tinygo|[Github Releases](https://github.com/tinygo-org/tinygo/releases)|
 |LocalSend|localsend|[Github Releases](https://github.com/localsend/localsend/releases)|
 |Motrix|motrix|[Github Releases](https://github.com/agalwood/Motrix/releases)|
-|滴答清单|dida|[官网](https://dida365.com/download)
 
 ### 合并自官方 repo
 
