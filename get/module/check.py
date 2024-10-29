@@ -8,7 +8,8 @@ def download(url, file_type):
     if not os.path.exists(file_dir):
         os.makedirs(file_dir)
     file_path = os.path.join(file_type, url.split("?")[0])
-    subprocess.run(["curl", "-fsLo", file_path, url])
+    # 用 curl 模拟 apt 下载文件，User-Agent 来自 Debian 12
+    subprocess.run(["curl", "-H", "User-Agent: Debian APT-HTTP/1.3 (2.6.1)", "-fsLo", file_path, url])
 
 
 def check_download(name, version, url, arch, file_type):

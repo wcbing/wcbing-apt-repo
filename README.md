@@ -39,6 +39,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |360安全浏览器|browser360-cn-stable|[官网](https://browser.360.net/gc/)|
 |滴答清单|dida|[官网](https://dida365.com/download)|
 |向日葵|sunloginclient<br />提取自 Debian 12 的依赖：<br />gconf2-common<br />libgconf-2-4|[官网](https://sunlogin.oray.com/download/linux)|
+|ToDesk|todesk|[官网](https://www.todesk.com/linux.html)|
 
 ### Github Releses
 
