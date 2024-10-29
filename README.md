@@ -55,6 +55,7 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |TinyGo|tinygo|[Github Releases](https://github.com/tinygo-org/tinygo/releases)|
 |LocalSend|localsend|[Github Releases](https://github.com/localsend/localsend/releases)|
 |Motrix|motrix|[Github Releases](https://github.com/agalwood/Motrix/releases)|
+|PeaZip|peazip|[Github Releases](https://github.com/peazip/PeaZip/releases)|
 
 ### 合并自官方 repo
 

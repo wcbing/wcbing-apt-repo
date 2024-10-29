@@ -76,5 +76,11 @@
         "file_list": [
             "Motrix_{stripped_version}_amd64.deb"
         ]
+    },
+    "peazip": {
+        "repo": "peazip/PeaZip",
+        "file_list": [
+            "peazip_{version_tag}.LINUX.GTK2-1_amd64.deb"
+        ]
     }
 }
