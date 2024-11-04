@@ -20,13 +20,18 @@
 
 <body>
     <h1>wcbing 的 APT 软件源</h1>
-    <a href="https://github.com/wcbing/wcbing-apt-repo">项目地址</a><br />
-    <a href="./version.txt">查看包版本信息</a>（<a href="./Packages">所有信息</a>）<br />
-    <a href="./status.txt">查看状态日志</a><br />
+    <h2>相关链接</h2>
+    <p>
+        <a href="https://github.com/wcbing/wcbing-apt-repo#已收录软件">已收录软件</a> |
+        <a href="./version.txt">现有包版本信息</a> | <a href="./Packages">完整信息</a>
+    </p>
     <h2>用法</h2>
-    <p>sudo curl -o /etc/apt/keyrings/wcbing.gpg https://packages.wcbing.top/wcbing.gpg<br />
-        echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/deb /" | sudo tee
-        /etc/apt/sources.list.d/wcbing.list</p>
+    <p>添加本仓库：<br /><code>curl -fsSL https://packages.wcbing.top/deb/add.sh | sudo sh</code> </p>
+    <p>移除本仓库：<br /><code>curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh</code> </p>
+    <p style="position: absolute;bottom: 0;width: 96%">
+        <a href="https://github.com/wcbing/wcbing-apt-repo">项目地址</a> |
+        <a href="./status.txt">仓库状态日志</a>
+    </p>
 </body>
 
 </html>

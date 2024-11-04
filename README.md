@@ -2,26 +2,28 @@
 
 供 Debian 系发行版用户使用的软件源，收集一些国内常用软件的二进制包。
 
+本仓库对于下载不受限的软件不提供文件托管服务，仅提供链接重定向功能，致力于在不改动 APT 的情况下实现类似 WinGet、Homebrew Cask 等仅提供仓库索引的效果。
+
 收录的软件说明：
-- 发布的是已打包的文件 ~~，不接受第三方自行打包~~。
+- 官方打包发布的文件 ~~，不接受第三方自行打包~~。
+- 不收录打包的 wine 应用、Android 应用。
+- 不收录图标、主题、字体等包，以后可能单独建一个相关仓库。
 - 有固定的更新地址，如官网、官方仓库或 Github Releases。
-- 本仓库对于国内网络下载不受限的软件不提供文件托管服务，仅提供链接重定向功能，最终效果类似 winget。
 - 现只收录了 x86_64，如有需要请参考最后一节自行建立仓库。
 
 ## 使用现有仓库
 
+添加本仓库：
 ```sh
-sudo curl -o /etc/apt/keyrings/wcbing.gpg https://packages.wcbing.top/wcbing.gpg
-
-echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/deb /" | sudo tee /etc/apt/sources.list.d/wcbing.list
+curl -fsSL https://packages.wcbing.top/deb/add.sh | sudo sh
 ```
 
-接下来执行 `sudo apt update` 更新即可。
+移除本仓库：
+```sh
+curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
+```
 
-
-## 现有软件
-
-可在 [这里](https://packages.wcbing.top/deb/version.txt) 查看具体版本。
+## 已收录软件
 
 ### 自行收集
 
@@ -40,6 +42,8 @@ echo "deb [signed-by=/etc/apt/keyrings/wcbing.gpg] https://packages.wcbing.top/d
 |滴答清单|dida|[官网](https://dida365.com/download)|
 |向日葵|sunloginclient<br />提取自 Debian 12 的依赖：<br />gconf2-common<br />libgconf-2-4|[官网](https://sunlogin.oray.com/download/linux)|
 |ToDesk|todesk|[官网](https://www.todesk.com/linux.html)|
+
+> 临时收录软件会在仓库首页通知。
 
 ### Github Releses
 

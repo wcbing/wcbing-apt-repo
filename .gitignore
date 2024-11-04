@@ -1,4 +1,6 @@
 */module/__pycache__/
 deb/*
 !deb/index.html
+!deb/add.sh
+!deb/del.sh
 deb.db
