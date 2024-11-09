@@ -84,7 +84,7 @@
         ]
     },
     "neovim": {
-        "repo": "neovim/neovim-releases/",
+        "repo": "neovim/neovim-releases",
         "file_list": [
             "nvim-linux64.deb "
         ]
