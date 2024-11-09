@@ -63,6 +63,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |LocalSend|localsend|[Github Releases](https://github.com/localsend/localsend/releases)|
 |Motrix|motrix|[Github Releases](https://github.com/agalwood/Motrix/releases)|
 |PeaZip|peazip|[Github Releases](https://github.com/peazip/PeaZip/releases)|
+|Neovim/Nvim|neovim|[Github Releases](https://github.com/neovim/neovim-releases/releases)|
 
 ### 合并自官方 repo
 
