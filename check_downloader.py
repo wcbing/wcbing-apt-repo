@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import subprocess
 import os
 import sqlite3
@@ -51,3 +52,14 @@ def check_download(name, version, url, arch, file_type):
 
 def deb(name, version, url, arch="x86_64"):
     check_download(name, version, url, arch=arch, file_type="deb")
+
+
+if __name__ == "__main__":
+    args = os.sys.argv
+    if len(args) == 5:
+        deb(args[1], args[2], args[3], args[4])
+    elif len(args) == 4:
+        deb(args[1], args[2], args[3])
+    else:
+        print("Usage: check.py <name> <version> <url> [arch]\n")
+        print("arch: x86_64, arm64. default is x86_64")
