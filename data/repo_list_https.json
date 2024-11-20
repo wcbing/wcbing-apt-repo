@@ -46,5 +46,10 @@
         "name": "black-desk",
         "repo": "https://github.com/black-desk/debs/releases/latest/download/",
         "amd64_path": "Packages"
+    },
+    {
+        "name": "typora",
+        "repo": "https://typoraio.cn/linux/",
+        "mix_path": "Packages"
     }
 ]
