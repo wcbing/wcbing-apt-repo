@@ -65,6 +65,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |PeaZip|peazip|[Github Releases](https://github.com/peazip/PeaZip/releases)|
 |Neovim/Nvim|neovim|[Github Releases](https://github.com/neovim/neovim-releases/releases)|
 |思源笔记|siyuan|[Github Releases](https://github.com/siyuan-note/siyuan/releases)|
+|Hiddify|hiddify|[Github Releases](https://github.com/hiddify/hiddify-app/releases)|
 
 ### 合并自官方 repo
 

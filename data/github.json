@@ -94,5 +94,11 @@
         "file_list": [
             "siyuan-{stripped_version}-linux-arm64.deb"
         ]
+    },
+    "hiddify": {
+        "repo": "hiddify/hiddify-app",
+        "file_list": [
+            "Hiddify-Debian-x64.deb"
+        ]
     }
 }
