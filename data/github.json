@@ -88,5 +88,11 @@
         "file_list": [
             "nvim-linux64.deb"
         ]
+    },
+    "siyuan": {
+        "repo": "siyuan-note/siyuan",
+        "file_list": [
+            "siyuan-{stripped_version}-linux-arm64.deb"
+        ]
     }
 }
