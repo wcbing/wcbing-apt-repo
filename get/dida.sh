@@ -1,4 +1,4 @@
-X64_URL=$(curl -sI "https://dida365.com/static/getApp/download?type=linux_deb_x64" | grep location | cut -d ' ' -f 2)
+X64_URL=$(curl -sI "https://dida365.com/static/getApp/download?type=linux_deb_x64" | grep location | cut -d ' ' -f 2 | tr -d '\r')
 # arm64 https://dida365.com/static/getApp/download?type=linux_deb_arm64
 
 # https://cdn.dida365.cn/download/linux/linux_deb_x64/dida-6.0.0-amd64.deb
