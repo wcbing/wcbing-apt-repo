@@ -2,7 +2,7 @@
     "clash-verge": {
         "repo": "clash-verge-rev/clash-verge-rev",
         "file_list": [
-            "clash-verge_{stripped_version}_amd64.deb"
+            "Clash.Verge_{stripped_version}_amd64.deb"
         ]
     },
     "mihomo": {
