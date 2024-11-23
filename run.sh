@@ -8,7 +8,7 @@ rm deb/Packages
 merge-apt-repo
 
 # check for updates
-github-downloader -r
+github-downloader -r -o deb
 find get -maxdepth 1 -type f -name "*.sh" -exec sh {} \;
 
 # generate the files
