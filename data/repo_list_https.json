@@ -51,9 +51,15 @@
         "name": "typora",
         "repo": "https://typoraio.cn/linux/",
         "mix_path": "Packages"
-    },{
+    },
+    {
         "name": "zotero",
         "repo": "https://zotero.retorque.re/file/apt-package-archive/",
         "amd64_path": "Packages"
+    },
+    {
+        "name": "gh",
+        "repo": "https://cli.github.com/packages/",
+        "amd64_path": "dists/stable/main/binary-amd64/Packages"
     }
 ]
