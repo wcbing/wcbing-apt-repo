@@ -81,6 +81,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |Tailscale|tailscale<br />tailscale-nginx-auth|
 |[black-desk 打包](https://github.com/black-desk/debs)|app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta<br />org.pimalaya.himalaya|
 |Typora|typora|
+|Zotero|zotero<br />zotero-beta<br />zotero6|
 
 
 ## 自建仓库
