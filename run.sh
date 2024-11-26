@@ -1,14 +1,10 @@
 #!/bin/sh
 
 date
-# import go tools
-export PATH="$PATH:$HOME/go/bin/"
 # merge the Packages files of third-party repositories
-rm deb/Packages
-merge-apt-repo
-
+./merge-apt-repo.py > deb/Packages
 # check for updates
-github-downloader -r -o deb
+$HOME/go/bin/github-downloader -r -o deb
 find get -maxdepth 1 -type f -name "*.sh" -exec sh {} \;
 
 # generate the files

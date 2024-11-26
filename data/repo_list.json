@@ -1,19 +1,16 @@
 [
     {
         "name": "google-chrome",
-        "only_latest": true,
         "repo": "https://dl.google.com/linux/chrome/deb/",
         "amd64_path": "dists/stable/main/binary-amd64/Packages"
     },
     {
         "name": "termius",
-        "only_latest": true,
         "repo": "https://deb.termius.com/",
         "amd64_path": "dists/squeeze/main/binary-amd64/Packages"
     },
     {
         "name": "steam",
-        "only_latest": true,
         "repo": "https://repo.steampowered.com/steam/",
         "amd64_path": "dists/stable/steam/binary-amd64/Packages"
     },
