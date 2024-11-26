@@ -71,7 +71,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 
 |软件仓库|包名|
 |-|-|
-|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly|
+|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly<br />mozillavpn|
 |Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable|
 |Microsoft Edge|microsoft-edge-stable<br />microsoft-edge-beta<br />microsoft-edge-dev|
 |Visual Studio Code|code<br />code-insiders<br />code-exploration|
