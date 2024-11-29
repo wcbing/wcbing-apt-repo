@@ -86,15 +86,19 @@ def get_latest(deb_packages):
 def process_repo(r):
     try:
         deb_packages = b""
-        if r.get("amd64_path"):
-            # 获取 Repo 中 Amd64 包信息
-            deb_packages += get_remote_packages(r["repo"], r["amd64_path"])
-        if r.get("arm64_path"):
-            # 获取 Repo 中 Arm64 包信息
-            deb_packages += get_remote_packages(r["repo"], r["arm64_path"])
         if r.get("mix_path"):
             # 获取扁平 Repo 中包信息
             deb_packages += get_remote_packages(r["repo"], r["mix_path"])
+        else:
+            if r.get("amd64_path"):
+                # 获取 Repo 中 Amd64 包信息
+                deb_packages += get_remote_packages(r["repo"], r["amd64_path"])
+            if r.get("arm64_path"):
+                # 获取 Repo 中 Arm64 包信息
+                deb_packages += get_remote_packages(r["repo"], r["arm64_path"])
+            if r.get("all_path"):
+                # 获取 Repo 中 All 包信息
+                deb_packages += get_remote_packages(r["repo"], r["all_path"])
         get_latest(deb_packages)
     except Exception as e:
         logging.error(f"Error processing repo {r.get('name', 'unknown')}: {e}")
@@ -111,11 +115,18 @@ def parse_arguments():
         default="data/repo_list.json",
         help="Path to the repository list file. Default is 'data/repo_list.json'.",
     )
+    parser.add_argument("--local", type=str, help="Process Packages in local repo")
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_arguments()
+
+    # 处理本地 repo
+    if args.local:
+        with open(args.local) as f:
+            get_latest(f.read().encode())
+
     repo_list = args.repo
     repo_list = read_repo_list(repo_list)
     if not repo_list:
@@ -124,7 +135,18 @@ if __name__ == "__main__":
     with ThreadPoolExecutor(max_workers=10) as executor:
         executor.map(process_repo, repo_list)
 
-    # 有需要可以分别输出到不同文件
-    for list in package_info.values():
-        for i in list.values():
-            print(i.decode(), end="")
+    # 分别输出到不同文件
+    with open("deb/amd64/Packages", "+wb") as f:
+        for i in package_info["amd64"].values():
+            f.write(i)
+        for i in package_info["i386"].values():
+            f.write(i)
+        for i in package_info["all"].values():
+            f.write(i)
+        f.close
+    with open("deb/arm64/Packages", "+wb") as f:
+        for i in package_info["arm64"].values():
+            f.write(i)
+        for i in package_info["all"].values():
+            f.write(i)
+        f.close
