@@ -2,13 +2,15 @@
     "clash-verge": {
         "repo": "clash-verge-rev/clash-verge-rev",
         "file_list": [
-            "Clash.Verge_{stripped_version}_amd64.deb"
+            "Clash.Verge_{stripped_version}_amd64.deb",
+            "Clash.Verge_{stripped_version}_arm64.deb"
         ]
     },
     "mihomo": {
         "repo": "MetaCubeX/mihomo",
         "file_list": [
-            "mihomo-linux-amd64-compatible-{version_tag}.deb"
+            "mihomo-linux-amd64-compatible-{version_tag}.deb",
+            "mihomo-linux-arm64-{version_tag}.deb"
         ]
     },
     "flclash": {
@@ -20,13 +22,15 @@
     "hugo": {
         "repo": "gohugoio/hugo",
         "file_list": [
-            "hugo_{stripped_version}_linux-amd64.deb"
+            "hugo_extended_{stripped_version}_linux-amd64.deb",
+            "hugo_extended_{stripped_version}_linux-arm64.deb"
         ]
     },
     "rustdesk": {
         "repo": "rustdesk/rustdesk",
         "file_list": [
-            "rustdesk-{version_tag}-x86_64.deb"
+            "rustdesk-{version_tag}-x86_64.deb",
+            "rustdesk-{version_tag}-aarch64.deb"
         ]
     },
     "obsidian": {
@@ -38,25 +42,29 @@
     "draw.io": {
         "repo": "jgraph/drawio-desktop",
         "file_list": [
-            "drawio-amd64-{stripped_version}.deb"
+            "drawio-amd64-{stripped_version}.deb",
+            "drawio-arm64-{stripped_version}.deb"
         ]
     },
     "tabby": {
         "repo": "Eugeny/tabby",
         "file_list": [
-            "tabby-{stripped_version}-linux-x64.deb"
+            "tabby-{stripped_version}-linux-x64.deb",
+            "tabby-{stripped_version}-linux-arm64.deb"
         ]
     },
     "pandoc": {
         "repo": "jgm/pandoc",
         "file_list": [
-            "pandoc-{version_tag}-1-amd64.deb"
+            "pandoc-{version_tag}-1-amd64.deb",
+            "pandoc-{version_tag}-1-arm64.deb"
         ]
     },
     "tinygo": {
         "repo": "tinygo-org/tinygo",
         "file_list": [
-            "tinygo_{stripped_version}_amd64.deb"
+            "tinygo_{stripped_version}_amd64.deb",
+            "tinygo_{stripped_version}_arm64.deb"
         ]
     },
     "chezmoi": {
@@ -68,13 +76,15 @@
     "localsend": {
         "repo": "localsend/localsend",
         "file_list": [
-            "LocalSend-{stripped_version}-linux-x86-64.deb"
+            "LocalSend-{stripped_version}-linux-x86-64.deb",
+            "LocalSend-{stripped_version}-linux-arm-64.deb"
         ]
     },
     "motrix": {
         "repo": "agalwood/Motrix",
         "file_list": [
-            "Motrix_{stripped_version}_amd64.deb"
+            "Motrix_{stripped_version}_amd64.deb",
+            "Motrix_{stripped_version}_arm64.deb"
         ]
     },
     "peazip": {
@@ -92,6 +102,7 @@
     "siyuan": {
         "repo": "siyuan-note/siyuan",
         "file_list": [
+            "siyuan-{stripped_version}-linux.deb",
             "siyuan-{stripped_version}-linux-arm64.deb"
         ]
     },

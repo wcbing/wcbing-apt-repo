@@ -48,24 +48,24 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 
 ### Github Releses
 
-|软件名|包名|地址|
-|-|-|-|
-|Clash Verge Rev|clash-verge|[Github Releses](https://github.com/clash-verge-rev/clash-verge-rev/releases)|
-|FlClash|flclash|[Github Releses](https://github.com/chen08209/FlClash/releases)|
-|mihomo|mihomo|[Github Releases](https://github.com/MetaCubeX/mihomo/releases)|
-|hugo|hugo|[Github Releases](https://github.com/gohugoio/hugo/releases)|
-|RustDesk|rustdesk|[Github Releases](https://github.com/rustdesk/rustdesk/releases)|
-|Obsidian|obsidian|[Github Releases](https://github.com/obsidianmd/obsidian-releases/releases)|
-|draw.io|draw.io|[Github Releases](https://github.com/jgraph/drawio-desktop/releases)|
-|Tabby|tabby-terminal|[Github Releases](https://github.com/Eugeny/tabby/releases)|
-|Pandoc|pandoc|[Github Releases](https://github.com/jgm/pandoc/releases)|
-|TinyGo|tinygo|[Github Releases](https://github.com/tinygo-org/tinygo/releases)|
-|LocalSend|localsend|[Github Releases](https://github.com/localsend/localsend/releases)|
-|Motrix|motrix|[Github Releases](https://github.com/agalwood/Motrix/releases)|
-|PeaZip|peazip|[Github Releases](https://github.com/peazip/PeaZip/releases)|
-|Neovim/Nvim|neovim|[Github Releases](https://github.com/neovim/neovim-releases/releases)|
-|思源笔记|siyuan|[Github Releases](https://github.com/siyuan-note/siyuan/releases)|
-|Hiddify|hiddify|[Github Releases](https://github.com/hiddify/hiddify-app/releases)|
+| 软件名 | 包名 | amd64 | arm64 |
+| ----- | ---- | ----- | ----- |
+| [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev/releases) | clash-verge | ✅ | ✅ |
+| [FlClash](https://github.com/chen08209/FlClash/releases) | flclash | ✅ | |
+| [mihomo](https://github.com/MetaCubeX/mihomo/releases) | mihomo | ✅ | ✅ |
+| [hugo](https://github.com/gohugoio/hugo/releases) | hugo | ✅ | ✅ |
+| [RustDesk](https://github.com/rustdesk/rustdesk/releases) | rustdesk | ✅ | ✅ |
+| [Obsidian](https://github.com/obsidianmd/obsidian-releases/releases) | obsidian | ✅ | |
+| [draw.io](https://github.com/jgraph/drawio-desktop/releases) | draw.io | ✅ | ✅ |
+| [Tabby](https://github.com/Eugeny/tabby/releases) | tabby-terminal | ✅ | ✅ |
+| [Pandoc](https://github.com/jgm/pandoc/releases) | pandoc | ✅ | ✅ |
+| [TinyGo](https://github.com/tinygo-org/tinygo/releases) | tinygo | ✅ | ✅ |
+| [LocalSend](https://github.com/localsend/localsend/releases) | localsend | ✅ | ✅ |
+| [Motrix](https://github.com/agalwood/Motrix/releases) | motrix | ✅ | ✅ |
+| [PeaZip](https://github.com/peazip/PeaZip/releases) | peazip | ✅ | |
+| [Neovim/Nvim](https://github.com/neovim/neovim-releases/releases) | neovim | ✅ | |
+| [思源笔记](https://github.com/siyuan-note/siyuan/releases) | siyuan | ✅ | ✅ |
+| [Hiddify](https://github.com/hiddify/hiddify-app/releases) | hiddify | ✅ | |
 
 ### 合并自官方 repo
 
