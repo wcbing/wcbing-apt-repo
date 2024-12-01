@@ -69,20 +69,20 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 
 ### 合并自官方 repo
 
-|软件仓库|包名|
-|-|-|
-|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly<br />mozillavpn|
-|Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable|
-|Microsoft Edge|microsoft-edge-stable<br />microsoft-edge-beta<br />microsoft-edge-dev|
-|Visual Studio Code|code<br />code-insiders<br />code-exploration|
-|termius|termius-app<br />termius-beta|
-|Sublime Text<br />Sublime Merge|sublime-text<br />sublime-merge|
-|Steam|steam-launcher<br />steam-libs-amd64|
-|Tailscale|tailscale<br />tailscale-nginx-auth|
-|[black-desk 打包](https://github.com/black-desk/debs)|app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta<br />org.pimalaya.himalaya|
-|Typora|typora|
+| 软件仓库 | 包名 | amd64 | arm64 |
+| ------ | ---- | ----- | ----- |
+|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly<br />mozillavpn| ✅ | ✅ |
+|Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable| ✅ | |
+|Microsoft Edge|microsoft-edge-stable<br />microsoft-edge-beta<br />microsoft-edge-dev| ✅ | |
+|Visual Studio Code|code<br />code-insiders<br />code-exploration| ✅ | ✅ |
+|termius|termius-app<br />termius-beta| ✅ | |
+|Sublime Text<br />Sublime Merge|sublime-text<br />sublime-merge| ✅ | ✅ |
+|Steam|steam-launcher<br />steam-libs-amd64| ✅ | |
+|Tailscale|tailscale<br />tailscale-nginx-auth| ✅ | ✅ |
+|[black-desk 打包](https://github.com/black-desk/debs)|app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta<br />org.pimalaya.himalaya| ✅ | |
+|Typora|typora| ✅ | ✅ |
 |Zotero|zotero<br />zotero-beta<br />zotero6|
-|Github CLI|gh|
+|Github CLI|gh| ✅ | ✅ |
 
 
 ## 自建仓库
