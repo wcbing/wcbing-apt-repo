@@ -13,7 +13,7 @@ def download(url, file_type):
     subprocess.run(["curl", "-H", "User-Agent: Debian APT-HTTP/1.3 (2.6.1)", "-fsLo", file_path, url])
 
 
-def check_download(name, version, url, arch, file_type):
+def check_download(name, version, url, arch, file_type="deb"):
     conn = sqlite3.connect(file_type + ".db")
     cur = conn.cursor()
 
@@ -50,16 +50,12 @@ def check_download(name, version, url, arch, file_type):
     conn.close()
 
 
-def deb(name, version, url, arch="x86_64"):
-    check_download(name, version, url, arch=arch, file_type="deb")
-
-
 if __name__ == "__main__":
     args = os.sys.argv
     if len(args) == 5:
-        deb(args[1], args[2], args[3], args[4])
+        check_download(args[1], args[2], args[3], args[4])
     elif len(args) == 4:
-        deb(args[1], args[2], args[3])
+        check_download(args[1], args[2], args[3], "x86_64")
     else:
         print("Usage: check.py <name> <version> <url> [arch]\n")
         print("arch: x86_64, arm64. default is x86_64")

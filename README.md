@@ -71,7 +71,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 
 | 软件仓库 | 包名 | amd64 | arm64 |
 | ------ | ---- | ----- | ----- |
-|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly<br />mozillavpn| ✅ | ✅ |
+|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_esr<br />firefox_nightly<br />mozillavpn| ✅ | ✅<br />官方仅提供<br />firefox_nightly |
 |Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable| ✅ | |
 |Microsoft Edge|microsoft-edge-stable<br />microsoft-edge-beta<br />microsoft-edge-dev| ✅ | |
 |Visual Studio Code|code<br />code-insiders<br />code-exploration| ✅ | ✅ |
@@ -81,7 +81,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |Tailscale|tailscale<br />tailscale-nginx-auth| ✅ | ✅ |
 |[black-desk 打包](https://github.com/black-desk/debs)|app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta<br />org.pimalaya.himalaya| ✅ | |
 |Typora|typora| ✅ | ✅ |
-|Zotero|zotero<br />zotero-beta<br />zotero6|
+|Zotero|zotero<br />zotero-beta<br />zotero6| ✅ | |
 |Github CLI|gh| ✅ | ✅ |
 
 
