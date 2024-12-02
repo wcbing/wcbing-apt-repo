@@ -27,22 +27,23 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 
 ### 自行收集
 
-|软件名|包名|地址|
-|-|-|-|
-|QQ|linuxqq|[官网](https://im.qq.com/linuxqq/)|
-|QQ音乐|qqmusic|[官网](https://y.qq.com/download/download.html)|
-|腾讯会议|wemeet|[官网](https://meeting.tencent.com/download/)|
-|WPS Office|wps-office|[官网](https://linux.wps.cn/)|
-|百度网盘|baidunetdisk|[官网](https://pan.baidu.com/download)|
-|钉钉|com.alibabainc.dingtalk|[官网](https://www.dingtalk.com/download/)|
-|飞书|bytedance-feishu-stable|[官网](https://www.feishu.cn/download)|
-|Xmind|xmind-vana|[官网](https://xmind.cn/download/)|
-|uTools|utools|[官网](https://u.tools/download/)|
-|360安全浏览器|browser360-cn-stable|[官网](https://browser.360.net/gc/)|
-|滴答清单|dida|[官网](https://dida365.com/download)|
-|向日葵|sunloginclient<br />提取自 Debian 12 的依赖：<br />gconf2-common<br />libgconf-2-4|[官网](https://sunlogin.oray.com/download/linux)|
-|ToDesk|todesk|[官网](https://www.todesk.com/linux.html)|
-|微信|wechat|[官网](https://linux.weixin.qq.com/)|
+| 软件名 | 包名 | amd64 | arm64 |
+| ----- | ---- | ----- | ----- |
+| [QQ](https://im.qq.com/linuxqq/) | linuxqq | ✅ | ✅ |
+| [QQ音乐](https://y.qq.com/download/download.html) | qqmusic | ✅ | |
+| [腾讯会议](https://meeting.tencent.com/download/) | wemeet | ✅ | ✅ |
+| [WPS Office](https://linux.wps.cn/) | wps-office | ✅ | |
+| [百度网盘](https://pan.baidu.com/download) | baidunetdisk | ✅ | |
+| [钉钉](https://www.dingtalk.com/download/) | com.alibabainc.dingtalk | ✅ | |
+| [飞书](https://www.feishu.cn/download) | bytedance-feishu-stable | ✅ | |
+| [Xmind](https://xmind.cn/download/) | xmind-vana | ✅ | |
+| [uTools](https://u.tools/download/) | utools | ✅ | |
+| [360安全浏览器](https://browser.360.net/gc/) | browser360-cn-stable | ✅ | |
+| [滴答清单](https://dida365.com/download) | dida | ✅ | ✅ |
+| [向日葵](https://sunlogin.oray.com/download/linux) | sunloginclient<br />提取自 Debian 12 的依赖：<br />gconf2-common<br />libgconf-2-4 | ✅ | |
+| [ToDesk](https://www.todesk.com/linux.html) | todesk | ✅ | |
+| [微信](https://linux.weixin.qq.com/) | wechat | ✅ | |
+
 
 > 临时收录软件会在仓库首页通知。
 

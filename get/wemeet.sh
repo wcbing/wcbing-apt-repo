@@ -14,5 +14,9 @@ JSON=$(curl -s $download_list_url)
 
 VERSION=$(echo $JSON | jq -r '."info-list"[0].version')
 X64_URL=$(echo $JSON | jq -r '."info-list"[0].url')
-
 ./check_downloader.py wemeet $VERSION $X64_URL
+
+# ARM64
+VERSION=$(echo $JSON | jq -r '."info-list"[1].version')
+ARM64_URL=$(echo $JSON | jq -r '."info-list"[1].url')
+./check_downloader.py wemeet $VERSION $ARM64_URL arm64
