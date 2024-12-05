@@ -39,13 +39,6 @@
             "obsidian_{stripped_version}_amd64.deb"
         ]
     },
-    "draw.io": {
-        "repo": "jgraph/drawio-desktop",
-        "file_list": [
-            "drawio-amd64-{stripped_version}.deb",
-            "drawio-arm64-{stripped_version}.deb"
-        ]
-    },
     "tabby": {
         "repo": "Eugeny/tabby",
         "file_list": [
@@ -58,19 +51,6 @@
         "file_list": [
             "pandoc-{version_tag}-1-amd64.deb",
             "pandoc-{version_tag}-1-arm64.deb"
-        ]
-    },
-    "tinygo": {
-        "repo": "tinygo-org/tinygo",
-        "file_list": [
-            "tinygo_{stripped_version}_amd64.deb",
-            "tinygo_{stripped_version}_arm64.deb"
-        ]
-    },
-    "chezmoi": {
-        "repo": "twpayne/chezmoi",
-        "file_list": [
-            "chezmoi_{stripped_version}_linux_amd64.deb"
         ]
     },
     "localsend": {
@@ -97,13 +77,6 @@
         "repo": "neovim/neovim-releases",
         "file_list": [
             "nvim-linux64.deb"
-        ]
-    },
-    "siyuan": {
-        "repo": "siyuan-note/siyuan",
-        "file_list": [
-            "siyuan-{stripped_version}-linux.deb",
-            "siyuan-{stripped_version}-linux-arm64.deb"
         ]
     },
     "hiddify": {

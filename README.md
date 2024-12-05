@@ -49,6 +49,9 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 
 ### Github Releses
 
+> 因服务器资源有限，本仓库可能无法收录部分大文件。  
+> 有收录需求也可投稿至星火商店的 [Github Releases 更新配置仓库](https://gitee.com/spark-building-service/github)，其和本部分内容是同源的。
+
 | 软件名 | 包名 | amd64 | arm64 |
 | ----- | ---- | ----- | ----- |
 | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev/releases) | clash-verge | ✅ | ✅ |
@@ -57,15 +60,12 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 | [hugo](https://github.com/gohugoio/hugo/releases) | hugo | ✅ | ✅ |
 | [RustDesk](https://github.com/rustdesk/rustdesk/releases) | rustdesk | ✅ | ✅ |
 | [Obsidian](https://github.com/obsidianmd/obsidian-releases/releases) | obsidian | ✅ | |
-| [draw.io](https://github.com/jgraph/drawio-desktop/releases) | draw.io | ✅ | ✅ |
 | [Tabby](https://github.com/Eugeny/tabby/releases) | tabby-terminal | ✅ | ✅ |
 | [Pandoc](https://github.com/jgm/pandoc/releases) | pandoc | ✅ | ✅ |
-| [TinyGo](https://github.com/tinygo-org/tinygo/releases) | tinygo | ✅ | ✅ |
 | [LocalSend](https://github.com/localsend/localsend/releases) | localsend | ✅ | ✅ |
 | [Motrix](https://github.com/agalwood/Motrix/releases) | motrix | ✅ | ✅ |
 | [PeaZip](https://github.com/peazip/PeaZip/releases) | peazip | ✅ | |
 | [Neovim/Nvim](https://github.com/neovim/neovim-releases/releases) | neovim | ✅ | |
-| [思源笔记](https://github.com/siyuan-note/siyuan/releases) | siyuan | ✅ | ✅ |
 | [Hiddify](https://github.com/hiddify/hiddify-app/releases) | hiddify | ✅ | |
 
 ### 合并自官方 repo
