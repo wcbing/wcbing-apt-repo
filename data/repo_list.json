@@ -62,5 +62,10 @@
         "repo": "https://cli.github.com/packages/",
         "amd64_path": "dists/stable/main/binary-amd64/Packages",
         "arm64_path": "dists/stable/main/binary-arm64/Packages"
+    },
+    {
+        "name": "ttyd",
+        "repo": "https://github.com/wcbing/ttyd-debs/releases/latest/download/",
+        "mix_path": "Packages"
     }
 ]

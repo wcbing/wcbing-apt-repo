@@ -84,7 +84,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |Typora|typora| ✅ | ✅ |
 |Zotero|zotero<br />zotero-beta<br />zotero6| ✅ | |
 |Github CLI|gh| ✅ | ✅ |
-
+|[ttyd: wcbing 打包](https://github.com/wcbing/ttyd-debs)|ttyd| ✅ | ✅ |
 
 ## 自建仓库
 
