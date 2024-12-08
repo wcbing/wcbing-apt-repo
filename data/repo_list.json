@@ -67,5 +67,15 @@
         "name": "ttyd",
         "repo": "https://github.com/wcbing/ttyd-debs/releases/latest/download/",
         "mix_path": "Packages"
+    },
+    {
+        "name": "dufs",
+        "repo": "https://github.com/wcbing/dufs-debs/releases/latest/download/",
+        "mix_path": "Packages"
+    },
+    {
+        "name": "frp",
+        "repo": "https://github.com/wcbing/frp-debs/releases/latest/download/",
+        "mix_path": "Packages"
     }
 ]
