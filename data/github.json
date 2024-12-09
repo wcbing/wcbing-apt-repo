@@ -84,5 +84,12 @@
         "file_list": [
             "Hiddify-Debian-x64.deb"
         ]
+    },
+    "cloudflared": {
+        "repo": "cloudflare/cloudflared",
+        "file_list": [
+            "cloudflared-linux-amd64.deb",
+            "cloudflared-linux-arm64.deb"
+        ]
     }
 }
