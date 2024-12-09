@@ -67,6 +67,8 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 | [PeaZip](https://github.com/peazip/PeaZip/releases) | peazip | ✅ | |
 | [Neovim/Nvim](https://github.com/neovim/neovim-releases/releases) | neovim | ✅ | |
 | [Hiddify](https://github.com/hiddify/hiddify-app/releases) | hiddify | ✅ | |
+| [Tiny RDM](https://github.com/tiny-craft/tiny-rdm/releases) | tiny-rdm | ✅ | |
+| [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared/releases) | cloudflared | ✅ | ✅ |
 
 ### 合并自官方 repo
 
