@@ -84,7 +84,11 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |Typora|typora| ✅ | ✅ |
 |Zotero|zotero<br />zotero-beta<br />zotero6| ✅ | |
 |Github CLI|gh| ✅ | ✅ |
-|[ttyd: wcbing 打包](https://github.com/wcbing/ttyd-debs)|ttyd| ✅ | ✅ |
+|[ttyd: wcbing 打包](https://github.com/wcbing-build/ttyd-debs)|ttyd| ✅ | ✅ |
+|[dufs: wcbing 打包](https://github.com/wcbing-build/dufs-debs)|dufs| ✅ | ✅ |
+|[frp: wcbing 打包](https://github.com/wcbing-build/frp-debs)|frps<br />frpc| ✅ | ✅ |
+|[lazydocker: wcbing 打包](https://github.com/wcbing-build/lazydocker-debs)|lazydocker| ✅ | ✅ |
+|[lazygit: wcbing 打包](https://github.com/wcbing-build/lazygit-debs)|lazygit| ✅ | ✅ |
 
 ## 自建仓库
 

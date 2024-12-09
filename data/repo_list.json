@@ -65,7 +65,27 @@
     },
     {
         "name": "ttyd",
-        "repo": "https://github.com/wcbing/ttyd-debs/releases/latest/download/",
+        "repo": "https://github.com/wcbing-build/ttyd-debs/releases/latest/download/",
+        "mix_path": "Packages"
+    },
+    {
+        "name": "dufs",
+        "repo": "https://github.com/wcbing-build/dufs-debs/releases/latest/download/",
+        "mix_path": "Packages"
+    },
+    {
+        "name": "frp",
+        "repo": "https://github.com/wcbing-build/frp-debs/releases/latest/download/",
+        "mix_path": "Packages"
+    },
+    {
+        "name": "lazydocker",
+        "repo": "https://github.com/wcbing-build/lazydocker-debs/releases/latest/download/",
+        "mix_path": "Packages"
+    },
+    {
+        "name": "lazygit",
+        "repo": "https://github.com/wcbing-build/lazygit-debs/releases/latest/download/",
         "mix_path": "Packages"
     }
 ]
