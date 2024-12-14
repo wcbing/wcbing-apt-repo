@@ -90,6 +90,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |[frp: wcbing 打包](https://github.com/wcbing-build/frp-debs)|frps<br />frpc| ✅ | ✅ |
 |[lazydocker: wcbing 打包](https://github.com/wcbing-build/lazydocker-debs)|lazydocker| ✅ | ✅ |
 |[lazygit: wcbing 打包](https://github.com/wcbing-build/lazygit-debs)|lazygit| ✅ | ✅ |
+|[nexttrace: wcbing 打包](https://github.com/wcbing-build/nexttrace-debs)|lazygit| ✅ | ✅ |
 
 ## 自建仓库
 

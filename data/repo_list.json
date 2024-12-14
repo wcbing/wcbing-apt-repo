@@ -87,5 +87,10 @@
         "name": "lazygit",
         "repo": "https://github.com/wcbing-build/lazygit-debs/releases/latest/download/",
         "mix_path": "Packages"
+    },
+    {
+        "name": "nexttrace",
+        "repo": "https://github.com/wcbing-build/nexttrace-debs/releases/latest/download/",
+        "mix_path": "Packages"
     }
 ]
