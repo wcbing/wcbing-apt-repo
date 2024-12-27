@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 
 import os
 import sqlite3
@@ -10,7 +10,7 @@ if not os.path.exists("deb/arm64"):
     os.makedirs("deb/arm64")
 
 # create table
-conn = sqlite3.connect("deb.db")
+conn = sqlite3.connect("data/deb.db")
 conn.execute(
     """
         CREATE TABLE IF NOT EXISTS x86_64 (

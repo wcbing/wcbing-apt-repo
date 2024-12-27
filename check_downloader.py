@@ -23,7 +23,7 @@ def download(url, base_dir):
 
 
 def check_download(name, version, url, arch, base_dir="deb"):
-    conn = sqlite3.connect(base_dir + ".db")
+    conn = sqlite3.connect(f"data/{base_dir}.db")
     cur = conn.cursor()
 
     res = cur.execute(
