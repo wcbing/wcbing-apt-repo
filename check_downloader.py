@@ -2,10 +2,18 @@
 import subprocess
 import os
 import sqlite3
+import logging
+
+base_dir = "deb"
+logging.basicConfig(
+    format="%(asctime)s %(message)s",
+    datefmt="%Y/%m/%d %H:%M:%S",
+    level=logging.INFO,
+)
 
 
-def download(url, base_dir):
-    file_dir = os.path.join(base_dir, "/".join(url.split("/")[:-1]))
+def download(url):
+    file_dir = os.path.join(base_dir, os.path.dirname(url))
     if not os.path.exists(file_dir):
         os.makedirs(file_dir)
     file_path = os.path.join(base_dir, url.split("?")[0])
@@ -22,42 +30,40 @@ def download(url, base_dir):
     )
 
 
-def check_download(name, version, url, arch, base_dir="deb"):
-    conn = sqlite3.connect(f"data/{base_dir}.db")
-    cur = conn.cursor()
+def check_download(name, version, url, arch):
+    logging.info("%s:%s = %s", name, arch, version)
 
-    res = cur.execute(
-        "SELECT version, url FROM " + arch + " WHERE name = ?", (name,)
-    ).fetchall()
-    if len(res):
-        local_version = res[0][0]
-        local_url = res[0][1]
-        print(name + ": " + local_version)
-        if local_version != version:
-            print("└  Update: " + local_version + " -> " + version)
+    # connect to db
+    with sqlite3.connect(os.path.join("data", f"{base_dir}.db")) as conn:
+        cur = conn.cursor()
+        res = cur.execute(
+            f"SELECT version, url FROM {arch} WHERE name = ?", (name,)
+        ).fetchall()
+        if len(res):
+            local_version = res[0][0]
+            local_url = res[0][1]
+            if local_version != version:
+                print(f"Update: {name}:{arch} ({local_version} -> {version})")
+                download(url, base_dir)
+                # wirte to db
+                cur.execute(
+                    f"UPDATE {arch} SET version = ?, url = ? WHERE name = ?",
+                    (version, url, name),
+                )
+                # remove old version
+                if local_url != url:  # 针对固定下载链接
+                    old_file_path = os.path.join(base_dir, local_url.split("?")[0])
+                    if os.path.exists(old_file_path):
+                        os.remove(old_file_path)
+        else:
+            print(f"AddNew: {name}:{arch} ({version})")
             download(url, base_dir)
             # wirte to db
             cur.execute(
-                "UPDATE " + arch + " SET version = ?, url = ? WHERE name = ?",
-                (version, url, name),
+                f"INSERT INTO {arch}(name, version, url) VALUES (?, ?, ?)",
+                (name, version, url),
             )
-            # remove old version
-            if local_url != url: # 针对固定下载链接
-                old_file_path = os.path.join(base_dir, local_url.split("?")[0])
-                if os.path.exists(old_file_path):
-                    os.remove(old_file_path)
-    else:
-        print(name + "\n└  Add: " + version)
-        download(url, base_dir)
-        # wirte to db
-        cur.execute(
-            "INSERT INTO " + arch + "(name, version, url) VALUES (?, ?, ?)",
-            (name, version, url),
-        )
-
-    cur.close()
-    conn.commit()
-    conn.close()
+        conn.commit()
 
 
 if __name__ == "__main__":
@@ -67,6 +73,8 @@ if __name__ == "__main__":
     elif len(args) == 4:
         check_download(args[1], args[2], args[3], "x86_64")
     else:
+        if len(args) > 1:
+            print(f"Unknown Args: {args[1:]}\n")
         print(f"Usage: {args[0]} <package_name> <version> <url> [arch]")
         print("options:")
         print("    arch: x86_64, arm64. default is x86_64")

@@ -1,22 +1,23 @@
 #!/bin/sh
 
-date
+gen_release() {
+    apt-ftparchive release $1 >$1/Release
+}
+
 # check for updates
 $HOME/go/bin/github-downloader -r -o deb
-find get -maxdepth 1 -type f -name "*.sh" -exec sh {} \;
+find get -type f -name "*.sh" -exec sh {} \;
+
 cd deb
 # generate the local Packages
 apt-ftparchive packages . > tmpPackages
-cd ..
+sed -i "s|\./http|http|g" tmpPackages
 
-sed -i "s/\.\/http/\.\.\/http/g" deb/tmpPackages
-# merge the Packages files of third-party repositories
+cd ..
+sed -i "s|\./wtf|\.\./wtf|g" deb/tmpPackages
+# merge the Packages files from third-party repositories
 ./merge-apt-repo.py --local deb/tmpPackages
 
 # generate the Release file
-cd deb/amd64
-apt-ftparchive release . > Release
-cd ../arm64
-apt-ftparchive release . > Release
-
-echo done
+gen_release deb/amd64
+gen_release deb/amd64
