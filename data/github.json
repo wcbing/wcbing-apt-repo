@@ -91,5 +91,12 @@
             "cloudflared-linux-amd64.deb",
             "cloudflared-linux-arm64.deb"
         ]
+    },
+    "caddy": {
+        "repo": "caddyserver/caddy",
+        "file_list": [
+            "caddy_{stripped_version}_linux_amd64.deb",
+            "caddy_{stripped_version}_linux_arm64.deb"
+        ]
     }
 }

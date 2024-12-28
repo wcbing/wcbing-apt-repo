@@ -66,6 +66,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 | [Neovim/Nvim](https://github.com/neovim/neovim-releases/releases) | neovim | ✅ | |
 | [Hiddify](https://github.com/hiddify/hiddify-app/releases) | hiddify | ✅ | |
 | [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared/releases) | cloudflared | ✅ | ✅ |
+| [Caddy](https://github.com/caddyserver/caddy/releases) | caddy | ✅ | ✅ |
 
 ### 合并自官方 repo
 
