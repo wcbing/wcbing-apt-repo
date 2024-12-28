@@ -6,9 +6,9 @@
 
 收录的软件说明：
 - 官方打包发布的文件 ~~，不接受第三方自行打包~~。
+- 有固定的更新地址，如官网、官方仓库或 Github Releases。
 - 不收录打包的 wine 应用、Android 应用。
 - 不收录图标、主题、字体等包，以后可能单独建一个相关仓库。
-- 有固定的更新地址，如官网、官方仓库或 Github Releases。
 - 现主要服务 x86_64 用户，同时实验性支持 arm64，如有需要请参考最后一节自行建立仓库。
 
 ## 使用现有仓库
@@ -45,8 +45,6 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 | [微信](https://linux.weixin.qq.com/) | wechat | ✅ | ✅ |
 
 
-> 临时收录软件会在仓库首页通知。
-
 ### Github Releses
 
 > 因服务器资源有限，本仓库可能无法收录部分大文件。  
@@ -81,7 +79,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |Sublime Text<br />Sublime Merge|sublime-text<br />sublime-merge| ✅ | ✅ |
 |Steam|steam-launcher<br />steam-libs-amd64| ✅ | |
 |Tailscale|tailscale<br />tailscale-nginx-auth| ✅ | ✅ |
-|[black-desk 打包](https://github.com/black-desk/debs)|app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta<br />org.pimalaya.himalaya| ✅ | |
+|[black-desk 打包](https://github.com/black-desk/debs)|app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />~~io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta~~<br />org.pimalaya.himalaya| ✅ | |
 |Typora|typora| ✅ | ✅ |
 |Zotero|zotero<br />zotero-beta<br />zotero6| ✅ | |
 |Github CLI|gh| ✅ | ✅ |
@@ -90,7 +88,7 @@ curl -fsSL https://packages.wcbing.top/deb/del.sh | sudo sh
 |[frp: wcbing 打包](https://github.com/wcbing-build/frp-debs)|frps<br />frpc| ✅ | ✅ |
 |[lazydocker: wcbing 打包](https://github.com/wcbing-build/lazydocker-debs)|lazydocker| ✅ | ✅ |
 |[lazygit: wcbing 打包](https://github.com/wcbing-build/lazygit-debs)|lazygit| ✅ | ✅ |
-|[nexttrace: wcbing 打包](https://github.com/wcbing-build/nexttrace-debs)|lazygit| ✅ | ✅ |
+|[nexttrace: wcbing 打包](https://github.com/wcbing-build/nexttrace-debs)|nexttrace| ✅ | ✅ |
 
 ## 自建仓库
 
