@@ -72,9 +72,9 @@ if __name__ == "__main__":
         check_download(args[1], args[2], args[3], args[4])
     elif len(args) == 4:
         check_download(args[1], args[2], args[3], "x86_64")
+    elif len(args) > 1:
+        logging.error(f"Unknown Args: {args[1:]}")
     else:
-        if len(args) > 1:
-            print(f"Unknown Args: {args[1:]}\n")
         print(f"Usage: {args[0]} <package_name> <version> <url> [arch]")
         print("options:")
         print("    arch: x86_64, arm64. default is x86_64")

@@ -31,7 +31,7 @@ def read_repo_list(repo_list_file):
         with open(repo_list_file, "r") as f:
             return json.load(f)
     except Exception as e:
-        logging.warning(f"Error reading repo list: {e}")
+        logging.error(f"Error reading repo list: {e}")
         return []
 
 
@@ -41,7 +41,7 @@ def get_remote_packages(repo_url, file_path):
     try:
         response = requests.get(file_url, timeout=10)
         if response.status_code != 200:
-            logging.warning(
+            logging.error(
                 f"GetError: {file_url} returned status {response.status_code}"
             )
             return b""
@@ -52,7 +52,7 @@ def get_remote_packages(repo_url, file_path):
             content += b"\n"
         return content.replace(b"Filename: ", f"Filename: {repo_url}".encode())
     except Exception as e:
-        logging.warning(f"Error fetching packages: {e}")
+        logging.error(f"Error fetching packages: {e}")
         return b""
 
 
@@ -86,18 +86,14 @@ def get_latest(deb_packages):
 def process_repo(r):
     try:
         deb_packages = b""
-        if r.get("mix_path"):
-            # 获取扁平 Repo 中包信息
+        if r.get("mix_path"):  # 获取扁平 Repo 中包信息
             deb_packages += get_remote_packages(r["repo"], r["mix_path"])
         else:
-            if r.get("amd64_path"):
-                # 获取 Repo 中 Amd64 包信息
+            if r.get("amd64_path"):  # 获取 Repo 中 Amd64 包信息
                 deb_packages += get_remote_packages(r["repo"], r["amd64_path"])
-            if r.get("arm64_path"):
-                # 获取 Repo 中 Arm64 包信息
+            if r.get("arm64_path"):  # 获取 Repo 中 Arm64 包信息
                 deb_packages += get_remote_packages(r["repo"], r["arm64_path"])
-            if r.get("all_path"):
-                # 获取 Repo 中 All 包信息
+            if r.get("all_path"):  # 获取 Repo 中 All 包信息
                 deb_packages += get_remote_packages(r["repo"], r["all_path"])
         get_latest(deb_packages)
     except Exception as e:
