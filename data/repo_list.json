@@ -2,17 +2,17 @@
     {
         "name": "google-chrome",
         "repo": "https://dl.google.com/linux/chrome/deb/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages"
+        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz"
     },
     {
         "name": "termius",
         "repo": "https://deb.termius.com/",
-        "amd64_path": "dists/squeeze/main/binary-amd64/Packages"
+        "amd64_path": "dists/squeeze/main/binary-amd64/Packages.gz"
     },
     {
         "name": "steam",
         "repo": "https://repo.steampowered.com/steam/",
-        "amd64_path": "dists/stable/steam/binary-amd64/Packages"
+        "amd64_path": "dists/stable/steam/binary-amd64/Packages.gz"
     },
     {
         "name": "firefox",
@@ -23,24 +23,24 @@
     {
         "name": "microsoft-edge",
         "repo": "https://packages.microsoft.com/repos/edge/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages"
+        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz"
     },
     {
         "name": "code",
         "repo": "https://packages.microsoft.com/repos/code/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages",
-        "arm64_path": "dists/stable/main/binary-arm64/Packages"
+        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz",
+        "arm64_path": "dists/stable/main/binary-arm64/Packages.gz"
     },
     {
         "name": "tailscale",
         "repo": "https://pkgs.tailscale.com/stable/debian/",
-        "amd64_path": "dists/sid/main/binary-amd64/Packages",
-        "arm64_path": "dists/sid/main/binary-arm64/Packages"
+        "amd64_path": "dists/sid/main/binary-amd64/Packages.gz",
+        "arm64_path": "dists/sid/main/binary-arm64/Packages.gz"
     },
     {
         "name": "sublime",
         "repo": "https://download.sublimetext.com/",
-        "mix_path": "apt/stable/Packages"
+        "mix_path": "apt/stable/Packages.gz"
     },
     {
         "name": "black-desk",
@@ -50,7 +50,7 @@
     {
         "name": "typora",
         "repo": "https://typoraio.cn/linux/",
-        "mix_path": "Packages"
+        "mix_path": "Packages.gz"
     },
     {
         "name": "zotero",
@@ -60,8 +60,8 @@
     {
         "name": "gh",
         "repo": "https://cli.github.com/packages/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages",
-        "arm64_path": "dists/stable/main/binary-arm64/Packages"
+        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz",
+        "arm64_path": "dists/stable/main/binary-arm64/Packages.gz"
     },
     {
         "name": "ttyd",
