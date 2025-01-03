@@ -26,6 +26,11 @@
         "amd64_path": "dists/stable/main/binary-amd64/Packages.gz"
     },
     {
+        "name": "opera-stable",
+        "repo": "https://deb.opera.com/opera-stable/",
+        "amd64_path": "dists/stable/non-free/binary-amd64/Packages.gz"
+    },
+    {
         "name": "code",
         "repo": "https://packages.microsoft.com/repos/code/",
         "amd64_path": "dists/stable/main/binary-amd64/Packages.gz",
