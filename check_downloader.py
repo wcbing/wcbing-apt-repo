@@ -44,7 +44,7 @@ def check_download(name, version, url, arch):
             local_url = res[0][1]
             if local_version != version:
                 print(f"Update: {name}:{arch} ({local_version} -> {version})")
-                download(url, base_dir)
+                download(url)
                 # wirte to db
                 cur.execute(
                     f"UPDATE {arch} SET version = ?, url = ? WHERE name = ?",
