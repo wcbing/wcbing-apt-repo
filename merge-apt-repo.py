@@ -17,30 +17,37 @@ package_version = {arch: {} for arch in ["all", "amd64", "i386", "arm64"]}
 package_info = {arch: {} for arch in ["all", "amd64", "i386", "arm64"]}
 lock = {arch: Lock() for arch in ["all", "amd64", "i386", "arm64"]}
 
+USER_AGENT = "Debian APT-HTTP/1.3 (2.6.1)"  # from Debian 12
+
 """
 repo info json format:
-{
-    "name": repo name
+"repo_name": {     
     "repo": repo url, end with "/"
-    "xxx_path": repo xxx Packages file path, start with no "/"
+    "xxx_path": {
+        "arch": repo Packages file path of "arch", start with no "/"
+    }
 }
 """
 
 
-def read_repo_list(repo_list_file):
+def read_repo_list(repo_list_file: str) -> dict:
     try:
         with open(repo_list_file, "r") as f:
             return json.load(f)
     except Exception as e:
         logging.error(f"Error reading repo list: {e}")
-        return []
+        return {}
 
 
-# get the packages file content from remote repo
-def get_remote_packages(repo_url, file_path):
+def get_remote_packages(repo_url: str, file_path: str) -> bytes:
+    """
+    get the packages file content from remote repo
+    """
     file_url = repo_url + file_path
     try:
-        response = requests.get(file_url, timeout=10)
+        response = requests.get(
+            file_url, timeout=10, headers={"User-Agent": USER_AGENT}
+        )
         if response.status_code != 200:
             logging.error(
                 f"GetError: {file_url} returned status {response.status_code}"
@@ -67,9 +74,11 @@ def get_remote_packages(repo_url, file_path):
         return b""
 
 
-def get_latest(deb_packages):
-    # split the information of each packet, store it in infoList
-    # 将每个包的信息分割开，存放到 infoList 中
+def get_latest(deb_packages: bytes):
+    """
+    split the information of each packet, deduplication and store the latest in infoList
+    将每个包的信息分割开，去重并将最新的存放到 infoList 中
+    """
     deb_packages = re.sub(rb"^Package: ", b"{{start}}Package: ", deb_packages, flags=re.MULTILINE)
     info_list = deb_packages.split(b"{{start}}")[1:]
 
@@ -97,18 +106,14 @@ def get_latest(deb_packages):
     return
 
 
-def process_repo(r):
+def process_repo(r: dict):
+    """
+    获取仓库中不同架构子仓库的内容，最后调用 get_latest 去重并保存。
+    """
     try:
         deb_packages = b""
-        if r.get("mix_path"):  # 获取扁平 Repo 中包信息
-            deb_packages += get_remote_packages(r["repo"], r["mix_path"])
-        else:
-            if r.get("amd64_path"):  # 获取 Repo 中 Amd64 包信息
-                deb_packages += get_remote_packages(r["repo"], r["amd64_path"])
-            if r.get("arm64_path"):  # 获取 Repo 中 Arm64 包信息
-                deb_packages += get_remote_packages(r["repo"], r["arm64_path"])
-            if r.get("all_path"):  # 获取 Repo 中 All 包信息
-                deb_packages += get_remote_packages(r["repo"], r["all_path"])
+        for arch, path in r["path"].items():
+            deb_packages += get_remote_packages(r["repo"], path)
         get_latest(deb_packages)
     except Exception as e:
         logging.error(f"Error processing repo {r.get('name', 'unknown')}: {e}")
@@ -137,19 +142,19 @@ if __name__ == "__main__":
         with open(args.local) as f:
             get_latest(f.read().encode())
 
-    repo_list_file = args.repo
-    repo_list = read_repo_list(repo_list_file)
+    # 读取 repo_list 配置
+    repo_list = read_repo_list(args.repo)
     if not repo_list:
         sys.exit()
 
     # 多线程，同时限制最大线程数
     with ThreadPoolExecutor(max_workers=10) as executor:
-        executor.map(process_repo, repo_list)
+        executor.map(process_repo, repo_list.values())
 
+    # 分别输出到不同文件
     os.makedirs("deb/amd64/", exist_ok=True)
     os.makedirs("deb/arm64/", exist_ok=True)
 
-    # 分别输出到不同文件
     with open("deb/amd64/Packages", "+wb") as f:
         for i in package_info["amd64"].values():
             f.write(i)

@@ -4,24 +4,16 @@ import sqlite3
 
 # create table
 conn = sqlite3.connect("data/deb.db")
-conn.execute(
-    """
-        CREATE TABLE IF NOT EXISTS x86_64 (
-            name TEXT UNIQUE,
-            version TEXT,
-            url TEXT
-        );
-    """
-)
-conn.execute(
-    """
-        CREATE TABLE IF NOT EXISTS arm64 (
-            name TEXT UNIQUE,
-            version TEXT,
-            url TEXT
-        );
-    """
-)
+for arch in ["amd64", "arm64", "all"]:
+    conn.execute(
+        f"""
+            CREATE TABLE IF NOT EXISTS '{arch}' (
+                name TEXT UNIQUE,
+                version TEXT,
+                url TEXT
+            );
+        """
+    )
 
 conn.commit()
 conn.close()

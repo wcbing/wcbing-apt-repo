@@ -1,106 +1,126 @@
-[
-    {
-        "name": "google-chrome",
+{
+    "google-chrome": {
         "repo": "https://dl.google.com/linux/chrome/deb/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz"
+        "path": {
+            "amd64": "dists/stable/main/binary-amd64/Packages.gz"
+        }
     },
-    {
-        "name": "google-earth",
+    "google-earth": {
         "repo": "https://dl.google.com/linux/earth/deb/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz"
+        "path": {
+            "amd64": "dists/stable/main/binary-amd64/Packages.gz"
+        }
     },
-    {
-        "name": "termius",
+    "termius": {
         "repo": "https://deb.termius.com/",
-        "amd64_path": "dists/squeeze/main/binary-amd64/Packages.gz"
+        "path": {
+            "amd64": "dists/squeeze/main/binary-amd64/Packages.gz"
+        }
     },
-    {
-        "name": "steam",
+    "steam": {
         "repo": "https://repo.steampowered.com/steam/",
-        "amd64_path": "dists/stable/steam/binary-amd64/Packages.gz"
+        "path": {
+            "amd64": "dists/stable/steam/binary-amd64/Packages.gz"
+        }
     },
-    {
-        "name": "firefox",
+    "firefox": {
         "repo": "https://packages.mozilla.org/apt/",
-        "amd64_path": "dists/mozilla/main/binary-amd64/Packages",
-        "arm64_path": "dists/mozilla/main/binary-arm64/Packages"
+        "path": {
+            "amd64": "dists/mozilla/main/binary-amd64/Packages",
+            "arm64": "dists/mozilla/main/binary-arm64/Packages"
+        }
     },
-    {
-        "name": "microsoft-edge",
+    "microsoft-edge": {
         "repo": "https://packages.microsoft.com/repos/edge/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz"
+        "path": {
+            "amd64": "dists/stable/main/binary-amd64/Packages.gz"
+        }
     },
-    {
-        "name": "opera-stable",
+    "opera-stable": {
         "repo": "https://deb.opera.com/opera-stable/",
-        "amd64_path": "dists/stable/non-free/binary-amd64/Packages.gz"
+        "path": {
+            "amd64": "dists/stable/non-free/binary-amd64/Packages.gz"
+        }
     },
-    {
-        "name": "code",
+    "code": {
         "repo": "https://packages.microsoft.com/repos/code/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz",
-        "arm64_path": "dists/stable/main/binary-arm64/Packages.gz"
+        "path": {
+            "amd64": "dists/stable/main/binary-amd64/Packages.gz",
+            "arm64": "dists/stable/main/binary-arm64/Packages.gz"
+        }
     },
-    {
-        "name": "tailscale",
+    "tailscale": {
         "repo": "https://pkgs.tailscale.com/stable/debian/",
-        "amd64_path": "dists/sid/main/binary-amd64/Packages.gz",
-        "arm64_path": "dists/sid/main/binary-arm64/Packages.gz"
+        "path": {
+            "amd64": "dists/sid/main/binary-amd64/Packages.gz",
+            "arm64": "dists/sid/main/binary-arm64/Packages.gz"
+        }
     },
-    {
-        "name": "sublime",
+    "sublime": {
         "repo": "https://download.sublimetext.com/",
-        "mix_path": "apt/stable/Packages.gz"
+        "path": {
+            "mix": "apt/stable/Packages.gz"
+        }
     },
-    {
-        "name": "black-desk",
+    "black-desk": {
         "repo": "https://github.com/black-desk/debs/releases/latest/download/",
-        "amd64_path": "Packages"
+        "path": {
+            "amd64": "Packages"
+        }
     },
-    {
-        "name": "typora",
+    "typora": {
         "repo": "https://typoraio.cn/linux/",
-        "mix_path": "Packages.gz"
+        "path": {
+            "mix": "Packages.gz"
+        }
     },
-    {
-        "name": "zotero",
+    "zotero": {
         "repo": "https://zotero.retorque.re/file/apt-package-archive/",
-        "amd64_path": "Packages"
+        "path": {
+            "amd64": "Packages"
+        }
     },
-    {
-        "name": "gh",
+    "gh": {
         "repo": "https://cli.github.com/packages/",
-        "amd64_path": "dists/stable/main/binary-amd64/Packages.gz",
-        "arm64_path": "dists/stable/main/binary-arm64/Packages.gz"
+        "path": {
+            "amd64": "dists/stable/main/binary-amd64/Packages.gz",
+            "arm64": "dists/stable/main/binary-arm64/Packages.gz"
+        }
     },
-    {
-        "name": "dufs",
+    "dufs": {
         "repo": "https://github.com/wcbing-build/dufs-debs/releases/latest/download/",
-        "mix_path": "Packages"
+        "path": {
+            "mix": "Packages"
+        }
     },
-    {
-        "name": "frp",
+    "frp": {
         "repo": "https://github.com/wcbing-build/frp-debs/releases/latest/download/",
-        "mix_path": "Packages"
+        "path": {
+            "mix": "Packages"
+        }
     },
-    {
-        "name": "lazydocker",
+    "lazydocker": {
         "repo": "https://github.com/wcbing-build/lazydocker-debs/releases/latest/download/",
-        "mix_path": "Packages"
+        "path": {
+            "mix": "Packages"
+        }
     },
-    {
-        "name": "lazygit",
+    "lazygit": {
         "repo": "https://github.com/wcbing-build/lazygit-debs/releases/latest/download/",
-        "mix_path": "Packages"
+        "path": {
+            "mix": "Packages"
+        }
     },
-    {
-        "name": "nexttrace",
+    "nexttrace": {
         "repo": "https://github.com/nxtrace/nexttrace-debs/releases/latest/download/",
-        "mix_path": "Packages"
+        "path": {
+            "mix": "Packages"
+        }
     },
-    {
-        "name": "debiancn",
+    "debiancn": {
         "repo": "https://mirrors.cernet.edu.cn/debiancn/",
-        "amd64_path": "dists/bookworm/main/binary-amd64/Packages.gz"
+        "path": {
+            "amd64": "dists/bookworm/main/binary-amd64/Packages.gz"
+        }
     }
-]
+}

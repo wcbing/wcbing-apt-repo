@@ -2,9 +2,16 @@
 import subprocess
 import os
 import sqlite3
+import sys
 import logging
+from threading import Lock
 
-base_dir = "deb"
+BASE_DIR = "deb"
+DB_DIR = "data"
+USER_AGENT = "Debian APT-HTTP/1.3 (2.6.1)"  # from Debian 12
+
+version_lock = Lock()
+
 logging.basicConfig(
     format="%(asctime)s %(message)s",
     datefmt="%Y/%m/%d %H:%M:%S",
@@ -12,69 +19,59 @@ logging.basicConfig(
 )
 
 
-def download(url):
-    file_dir = os.path.join(base_dir, os.path.dirname(url))
-    if not os.path.exists(file_dir):
-        os.makedirs(file_dir)
-    file_path = os.path.join(base_dir, url.split("?")[0])
-    # 用 curl 模拟 apt 下载文件，User-Agent 来自 Debian 12
-    subprocess.run(
-        [
-            "curl",
-            "-H",
-            "User-Agent: Debian APT-HTTP/1.3 (2.6.1)",
-            "-fsLo",
-            file_path,
-            url,
-        ]
-    )
+def download(url: str) -> None:
+    """Download file using curl with APT User-Agent."""
+    file_path = os.path.join(BASE_DIR, url.split("?")[0])
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    subprocess.run(["curl", "-H", f"User-Agent: {USER_AGENT}", "-fsLo", file_path, url])
 
 
-def check_download(name, version, url, arch):
+def check_download(name: str, version: str, url: str, arch: str="amd64") -> None:
+    """Check and handle package download/update."""
     logging.info("%s:%s = %s", name, arch, version)
 
-    # connect to db
-    with sqlite3.connect(os.path.join("data", f"{base_dir}.db")) as conn:
-        cur = conn.cursor()
-        res = cur.execute(
-            f"SELECT version, url FROM {arch} WHERE name = ?", (name,)
-        ).fetchall()
-        if len(res):
-            local_version = res[0][0]
-            local_url = res[0][1]
-            if local_version != version:
-                print(f"Update: {name}:{arch} ({local_version} -> {version})")
-                download(url)
-                # wirte to db
-                cur.execute(
-                    f"UPDATE {arch} SET version = ?, url = ? WHERE name = ?",
+    db_path = os.path.join("data", f"{BASE_DIR}.db")
+    # get local version
+    with version_lock, sqlite3.connect(db_path) as conn:
+        res = conn.execute(
+            f"SELECT version, url FROM '{arch}' WHERE name = ?", (name,)
+        ).fetchone()
+    if res:
+        local_version, local_url = res
+        if local_version != version:
+            print(f"Update: {name}:{arch} ({local_version} -> {version})")
+            download(url)
+            # update database
+            with version_lock, sqlite3.connect(db_path) as conn:
+                conn.execute(
+                    f"UPDATE '{arch}' SET version = ?, url = ? WHERE name = ?",
                     (version, url, name),
                 )
-                # remove old version
-                if local_url != url:  # 针对固定下载链接
-                    old_file_path = os.path.join(base_dir, local_url.split("?")[0])
-                    if os.path.exists(old_file_path):
-                        os.remove(old_file_path)
-        else:
-            print(f"AddNew: {name}:{arch} ({version})")
-            download(url)
-            # wirte to db
-            cur.execute(
-                f"INSERT INTO {arch}(name, version, url) VALUES (?, ?, ?)",
+                conn.commit()
+            # remove old version
+            if local_url != url:  # 防止固定下载链接
+                old_file_path = os.path.join(BASE_DIR, local_url.split("?")[0])
+                if os.path.exists(old_file_path):
+                    os.remove(old_file_path)
+    else:
+        print(f"AddNew: {name}:{arch} ({version})")
+        download(url)
+        # update database
+        with version_lock, sqlite3.connect(db_path) as conn:
+            conn.execute(
+                f"INSERT INTO '{arch}'(name, version, url) VALUES (?, ?, ?)",
                 (name, version, url),
             )
-        conn.commit()
+            conn.commit()
 
 
 if __name__ == "__main__":
-    args = os.sys.argv
-    if len(args) == 5:
-        check_download(args[1], args[2], args[3], args[4])
-    elif len(args) == 4:
-        check_download(args[1], args[2], args[3], "x86_64")
+    args = sys.argv
+    if len(args) in (4, 5):
+        check_download(*args[1:])
     elif len(args) > 1:
         logging.error(f"Unknown Args: {args[1:]}")
     else:
         print(f"Usage: {args[0]} <package_name> <version> <url> [arch]")
         print("options:")
-        print("    arch: x86_64, arm64. default is x86_64")
+        print("    arch: amd64, arm64, all. default is amd64")
