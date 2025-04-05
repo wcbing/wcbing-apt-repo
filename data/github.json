@@ -104,5 +104,12 @@
         "file_list": {
             "all": "foliate_{releases_tag}_all.deb"
         }
+    },
+    "code-server": {
+        "repo": "coder/code-server",
+        "file_list": {
+            "amd64": "code-server_{version}_amd64.deb",
+            "arm64": "code-server_{version}_arm64.deb"
+        }
     }
 }

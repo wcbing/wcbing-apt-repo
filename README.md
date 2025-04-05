@@ -63,6 +63,7 @@
 | [Hiddify](https://github.com/hiddify/hiddify-app/releases) | hiddify | ✅ | |
 | [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared/releases) | cloudflared | ✅ | ✅ |
 | [Caddy](https://github.com/caddyserver/caddy/releases) | caddy | ✅ | ✅ |
+| [code-server](https://github.com/coder/code-server/releases) | code-server | ✅ | ✅ |
 
 ### 合并自官方 repo
 
