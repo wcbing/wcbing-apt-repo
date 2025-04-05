@@ -111,5 +111,11 @@
             "amd64": "code-server_{version}_amd64.deb",
             "arm64": "code-server_{version}_arm64.deb"
         }
+    },
+    "dbeaver-ce": {
+        "repo": "dbeaver/dbeaver",
+        "file_list": {
+            "amd64": "dbeaver-ce_{version}_amd64.deb"
+        }
     }
 }

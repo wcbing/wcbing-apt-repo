@@ -64,6 +64,7 @@
 | [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared/releases) | cloudflared | ✅ | ✅ |
 | [Caddy](https://github.com/caddyserver/caddy/releases) | caddy | ✅ | ✅ |
 | [code-server](https://github.com/coder/code-server/releases) | code-server | ✅ | ✅ |
+| [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
 
 ### 合并自官方 repo
 
