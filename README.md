@@ -21,6 +21,8 @@
 
 ## 已收录软件
 
+> 部分应用长时间不更新，可能不会如下面一样编写脚本，最终请以 apt 查询到的为准。
+
 ### 自行收集
 
 | 软件名 | 包名 | amd64 | arm64 |
@@ -47,49 +49,49 @@
 
 | 软件名 | 包名 | amd64 | arm64 |
 | ----- | ---- | ----- | ----- |
-| [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev/releases) | clash-verge | ✅ | ✅ |
-| [FlClash](https://github.com/chen08209/FlClash/releases) | flclash | ✅ | |
-| [mihomo](https://github.com/MetaCubeX/mihomo/releases) | mihomo | ✅ | ✅ |
-| [hugo](https://github.com/gohugoio/hugo/releases) | hugo | ✅ | ✅ |
-| [RustDesk](https://github.com/rustdesk/rustdesk/releases) | rustdesk | ✅ | ✅ |
-| [Obsidian](https://github.com/obsidianmd/obsidian-releases/releases) | obsidian | ✅ | |
-| [Foliate](https://github.com/johnfactotum/foliate/releases) | foliate |  ✅ | ✅ |
-| [Tabby](https://github.com/Eugeny/tabby/releases) | tabby-terminal | ✅ | ✅ |
-| [Pandoc](https://github.com/jgm/pandoc/releases) | pandoc | ✅ | ✅ |
-| [LocalSend](https://github.com/localsend/localsend/releases) | localsend | ✅ | ✅ |
-| [Motrix](https://github.com/agalwood/Motrix/releases) | motrix | ✅ | ✅ |
-| [PeaZip](https://github.com/peazip/PeaZip/releases) | peazip | ✅ | |
-| [Neovim/Nvim](https://github.com/neovim/neovim-releases/releases) | neovim | ✅ | |
-| [Hiddify](https://github.com/hiddify/hiddify-app/releases) | hiddify | ✅ | |
-| [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared/releases) | cloudflared | ✅ | ✅ |
-| [Caddy](https://github.com/caddyserver/caddy/releases) | caddy | ✅ | ✅ |
-| [code-server](https://github.com/coder/code-server/releases) | code-server | ✅ | ✅ |
+| [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | clash-verge | ✅ | ✅ |
+| [FlClash](https://github.com/chen08209/FlClash) | flclash | ✅ | |
+| [mihomo](https://github.com/MetaCubeX/mihomo) | mihomo | ✅ | ✅ |
+| [hugo](https://github.com/gohugoio/hugo) | hugo | ✅ | ✅ |
+| [RustDesk](https://github.com/rustdesk/rustdesk) | rustdesk | ✅ | ✅ |
+| [Obsidian](https://github.com/obsidianmd/obsidian-releases) | obsidian | ✅ | |
+| [Foliate](https://github.com/johnfactotum/foliate) | foliate |  ✅ | ✅ |
+| [Tabby](https://github.com/Eugeny/tabby) | tabby-terminal | ✅ | ✅ |
+| [Pandoc](https://github.com/jgm/pandoc) | pandoc | ✅ | ✅ |
+| [LocalSend](https://github.com/localsend/localsend) | localsend | ✅ | ✅ |
+| [Motrix](https://github.com/agalwood/Motrix) | motrix | ✅ | ✅ |
+| [PeaZip](https://github.com/peazip/PeaZip) | peazip | ✅ | |
+| [Neovim/Nvim](https://github.com/neovim/neovim-releases) | neovim | ✅ | |
+| [Hiddify](https://github.com/hiddify/hiddify-app) | hiddify | ✅ | |
+| [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared) | cloudflared | ✅ | ✅ |
+| [Caddy](https://github.com/caddyserver/caddy) | caddy | ✅ | ✅ |
+| [code-server](https://github.com/coder/code-server) | code-server | ✅ | ✅ |
 | [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
 
 ### 合并自官方 repo
 
 | 软件仓库 | 包名 | amd64 | arm64 |
 | ------ | ---- | ----- | ----- |
-|Mozilla Firefox|firefox<br />firefox_beta<br />firefox_devedition<br />firefox_nightly<br />firefox_esr<br />mozillavpn| ✅ | ✅ |
-|Google Chrome|google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable| ✅ | |
-|Google Earth|google-earth-pro-stable<br />google-earth-ec-stable| ✅ | |
-|Microsoft Edge|microsoft-edge-stable<br />microsoft-edge-beta<br />microsoft-edge-dev| ✅ | |
-|Opera|opera-stable<br />opera-beta<br />opera-developer| ✅ | |
-|Visual Studio Code|code<br />code-insiders<br />code-exploration| ✅ | ✅ |
-|termius|termius-app<br />termius-beta| ✅ | |
-|Sublime Text<br />Sublime Merge|sublime-text<br />sublime-merge| ✅ | ✅ |
-|Steam|steam-launcher<br />steam-libs-amd64| ✅ | |
-|Tailscale|tailscale<br />tailscale-nginx-auth| ✅ | ✅ |
-|[black-desk 打包](https://github.com/black-desk/debs)|app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />~~io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta~~<br />org.pimalaya.himalaya| ✅ | |
-|Typora|typora| ✅ | ✅ |
-|Zotero|zotero<br />zotero-beta<br />zotero6| ✅ | |
-|Github CLI|gh| ✅ | ✅ |
-|[dufs: wcbing 打包](https://github.com/wcbing-build/dufs-debs)|dufs| ✅ | ✅ |
-|[frp: wcbing 打包](https://github.com/wcbing-build/frp-debs)|frps<br />frpc| ✅ | ✅ |
-|[lazydocker: wcbing 打包](https://github.com/wcbing-build/lazydocker-debs)|lazydocker| ✅ | ✅ |
-|[lazygit: wcbing 打包](https://github.com/wcbing-build/lazygit-debs)|lazygit| ✅ | ✅ |
-|[NextTrace](https://github.com/nxtrace/nexttrace-debs)|nexttrace| ✅ | ✅ |
-|Debian 中文社区软件源|anydesk<br />marktext<br />wps-office<br />[更多](https://github.com/debiancn/repo)| ✅ | |
+| [Mozilla Firefox](https://support.mozilla.org/zh-CN/kb/install-firefox-linux) | firefox<br />firefox_beta<br />firefox_devedition<br />firefox_nightly<br />firefox_esr<br />mozillavpn | ✅ | ✅ |
+| Google Chrome | google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable | ✅ | |
+| Google Earth | google-earth-pro-stable<br />google-earth-ec-stable | ✅ | |
+| Microsoft Edge | microsoft-edge-stable<br />microsoft-edge-beta<br />microsoft-edge-dev | ✅ | |
+| Opera | opera-stable<br />opera-beta<br />opera-developer | ✅ | |
+| Visual Studio Code | code<br />code-insiders<br />code-exploration | ✅ | ✅ |
+| termius | termius-app<br />termius-beta | ✅ | |
+| [Sublime Text<br />Sublime Merge](https://www.sublimetext.com/docs/linux_repositories.html) | sublime-text<br />sublime-merge | ✅ | ✅ |
+| [Steam](https://repo.steampowered.com/steam/) | steam-launcher<br />steam-libs-amd64 | ✅ | |
+| [Tailscale](https://pkgs.tailscale.com/stable/) | tailscale<br />tailscale-nginx-auth | ✅ | ✅ |
+| [black-desk 打包](https://github.com/black-desk/debs) | app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />~~io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta~~<br />org.pimalaya.himalaya | ✅ | |
+| [Typora](https://typora.io/#linux) | typora | ✅ | ✅ |
+| [Zotero](https://zotero.retorque.re/file/apt-package-archive/index.html) | zotero<br />zotero-beta<br />zotero6 | ✅ | |
+| [Github CLI](https://cli.github.com/) | gh | ✅ | ✅ |
+| [dufs: wcbing 打包](https://github.com/wcbing-build/dufs-debs) | dufs | ✅ | ✅ |
+| [frp: wcbing 打包](https://github.com/wcbing-build/frp-debs) | frps<br />frpc | ✅ | ✅ |
+| [lazydocker: wcbing 打包](https://github.com/wcbing-build/lazydocker-debs) | lazydocker | ✅ | ✅ |
+| [lazygit: wcbing 打包](https://github.com/wcbing-build/lazygit-debs) | lazygit | ✅ | ✅ |
+| [NextTrace](https://github.com/nxtrace/nexttrace-debs) | nexttrace | ✅ | ✅ |
+| [Debian 中文社区软件源](https://github.com/debiancn/repo) | anydesk<br />marktext<br />wps-office<br />[更多](https://github.com/debiancn/repo) | ✅ | |
 
 ## 自建仓库
 
