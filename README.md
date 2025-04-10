@@ -31,7 +31,7 @@
 | [QQ音乐](https://y.qq.com/download/download.html) | qqmusic | ✅ | |
 | [腾讯会议](https://meeting.tencent.com/download/) | wemeet | ✅ | ✅ |
 | [百度网盘](https://pan.baidu.com/download) | baidunetdisk | ✅ | |
-| [钉钉](https://www.dingtalk.com/download/) | com.alibabainc.dingtalk | ✅ | |
+| [钉钉](https://www.dingtalk.com/download/) | com.alibabainc.dingtalk | ✅ | ✅ |
 | [飞书](https://www.feishu.cn/download) | bytedance-feishu-stable | ✅ | |
 | [Xmind](https://xmind.cn/download/) | xmind-vana | ✅ | |
 | [uTools](https://u.tools/download/) | utools | ✅ | |
