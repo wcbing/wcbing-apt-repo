@@ -30,6 +30,7 @@
 | [QQ](https://im.qq.com/linuxqq/) | linuxqq | ✅ | ✅ |
 | [QQ音乐](https://y.qq.com/download/download.html) | qqmusic | ✅ | |
 | [腾讯会议](https://meeting.tencent.com/download/) | wemeet | ✅ | ✅ |
+| [腾讯文档](https://docs.qq.com/home/download) | tdappdesktop | ✅ | ✅ |
 | [百度网盘](https://pan.baidu.com/download) | baidunetdisk | ✅ | |
 | [钉钉](https://www.dingtalk.com/download/) | com.alibabainc.dingtalk | ✅ | ✅ |
 | [飞书](https://www.feishu.cn/download) | bytedance-feishu-stable | ✅ | |
