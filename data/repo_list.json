@@ -122,5 +122,12 @@
         "path": {
             "amd64": "dists/bookworm/main/binary-amd64/Packages.gz"
         }
+    },
+    "gitea": {
+        "repo": "https://mirrors.ustc.edu.cn/packaging-gitea/",
+        "path": {
+            "amd64": "dists/gitea/main/binary-amd64/Packages",
+            "arm64": "dists/gitea/main/binary-arm64/Packages"
+        }
     }
 }
