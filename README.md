@@ -69,7 +69,7 @@
 | [code-server](https://github.com/coder/code-server) | code-server | ✅ | ✅ |
 | [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
 
-### 合并自官方 repo
+### 合并自现有 repo
 
 | 软件仓库 | 包名 | amd64 | arm64 |
 | ------ | ---- | ----- | ----- |
@@ -92,7 +92,8 @@
 | [lazydocker: wcbing 打包](https://github.com/wcbing-build/lazydocker-debs) | lazydocker | ✅ | ✅ |
 | [lazygit: wcbing 打包](https://github.com/wcbing-build/lazygit-debs) | lazygit | ✅ | ✅ |
 | [NextTrace](https://github.com/nxtrace/nexttrace-debs) | nexttrace | ✅ | ✅ |
-| [Debian 中文社区软件源](https://github.com/debiancn/repo) | anydesk<br />marktext<br />wps-office<br />[更多](https://github.com/debiancn/repo) | ✅ | |
+| [Debian 中文社区软件源](https://github.com/debiancn/repo)（[镜像](https://help.mirrors.cernet.edu.cn/debiancn/)） | anydesk<br />marktext<br />wps-office<br />[更多](https://github.com/debiancn/repo) | ✅ | |
+| [Gitea](https://gitlab.com/packaging/gitea)（[镜像](https://mirrors.ustc.edu.cn/help/packaging-gitea.html)） | gitea | ✅ | ✅ |
 
 ## 自建仓库
 
