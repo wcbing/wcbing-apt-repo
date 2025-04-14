@@ -1,22 +1,16 @@
 #!/bin/sh
 
-gen_release() {
-    apt-ftparchive release $1 >$1/Release
-    gpg --yes --detach-sign -a -o $1/Release.gpg $1/Release
-    gpg --yes --clearsign -o $1/InRelease $1/Release
-}
-
 # check for updates
 ./get-github-releases.py
 find get -type f -name "*.sh" -exec sh {} \;
 
+# generate the Packages file
+## generate the local Packages file
 cd deb
-# generate the local Packages
 apt-ftparchive packages . > tmpPackages
 sed -i "s|\./\(https\?\):/|\1://|g" tmpPackages
 
 cd ..
-sed -i "s|\./|\.\./|g" deb/tmpPackages
 
 ## merge the Packages file from local package
 cat $(find packages -name "*.package") >> deb/tmpPackages
@@ -25,5 +19,7 @@ cat $(find packages -name "*.package") >> deb/tmpPackages
 ./merge-apt-repo.py --local deb/tmpPackages
 
 # generate the Release file
-gen_release deb/amd64
-gen_release deb/arm64
+cd deb/dists/wcbing && \
+apt-ftparchive release -c apt-ftparchive.conf . > Release && \
+gpg --yes --detach-sign -a -o Release.gpg Release && \
+gpg --yes --clearsign -o InRelease Release

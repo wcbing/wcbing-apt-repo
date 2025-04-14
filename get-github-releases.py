@@ -41,11 +41,11 @@ if __name__ == "__main__":
             )
             # get latest releases tag 获取最新版本标签
             location = requests.head(release_url + "/latest").headers.get("Location", "")
-            match = re.search(r".*releases/tag/([^/]+)", location)
+            match = re.search(r".*releases/tag/(.*)", location)
             if not match:
                 continue
             releases_tag = match.group(1)
-            version = match.group() if (match := re.search("[0-9].*", releases_tag)) else ""
+            version = match.group() if (match := re.search("[0-9][^_]*", releases_tag)) else ""
 
 
             for arch, file_name in repo["file_list"].items():
