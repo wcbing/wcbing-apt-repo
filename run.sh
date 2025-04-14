@@ -17,6 +17,10 @@ sed -i "s|\./\(https\?\):/|\1://|g" tmpPackages
 
 cd ..
 sed -i "s|\./|\.\./|g" deb/tmpPackages
+
+## merge the Packages file from local package
+cat $(find packages -name "*.package") >> deb/tmpPackages
+
 # merge the Packages files from third-party repositories
 ./merge-apt-repo.py --local deb/tmpPackages
 

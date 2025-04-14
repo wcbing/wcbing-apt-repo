@@ -60,13 +60,6 @@
             "arm64": "LocalSend-{version}-linux-arm-64.deb"
         }
     },
-    "motrix": {
-        "repo": "agalwood/Motrix",
-        "file_list": {
-            "amd64": "Motrix_{version}_amd64.deb",
-            "arm64": "Motrix_{version}_arm64.deb"
-        }
-    },
     "peazip": {
         "repo": "peazip/PeaZip",
         "file_list": {

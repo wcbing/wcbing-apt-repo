@@ -1,0 +1,18 @@
+Package: yolx
+Architecture: amd64
+Version: 0.3.9+1
+Priority: optional
+Essential: no
+Section: x11
+Maintainer: Yoyo <admin@yzzi.icu>
+Installed-Size: 6604
+Depends: libappindicator3-1, libayatana-appindicator3-1
+Filename: https://github.com/uiYzzi/Yolx/releases/download/0.3.9+1/yolx-linux-0.3.9+1.deb
+Size: 11392180
+MD5sum: 5b34c223e1b1e8eb0993d7d72c41d0cd
+SHA1: 5cbcdb0cb88055e29f58a93b3a8f8199a5f2af96
+SHA256: 52962ba986cea645b2b3817031899ba64fb32872160841f92a3fb9822b7e3561
+SHA512: 563b28d6d7c3273e6d2f9ce5ebb60e261f4832efccc4d89dfa75007803e3fb639f7210bd52c80ab8dccb0748346a7e3dd5d82df0e6c9c9a5883dddf13c24f6f7
+Description: An aria2 client
+Uploaders: Yoyo <admin@yzzi.icu>
+

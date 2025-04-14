@@ -60,7 +60,6 @@
 | [Tabby](https://github.com/Eugeny/tabby) | tabby-terminal | ✅ | ✅ |
 | [Pandoc](https://github.com/jgm/pandoc) | pandoc | ✅ | ✅ |
 | [LocalSend](https://github.com/localsend/localsend) | localsend | ✅ | ✅ |
-| [Motrix](https://github.com/agalwood/Motrix) | motrix | ✅ | ✅ |
 | [PeaZip](https://github.com/peazip/PeaZip) | peazip | ✅ | |
 | [Neovim/Nvim](https://github.com/neovim/neovim-releases) | neovim | ✅ | |
 | [Hiddify](https://github.com/hiddify/hiddify-app) | hiddify | ✅ | |
@@ -68,6 +67,17 @@
 | [Caddy](https://github.com/caddyserver/caddy) | caddy | ✅ | ✅ |
 | [code-server](https://github.com/coder/code-server) | code-server | ✅ | ✅ |
 | [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
+
+
+### 存档或不活跃
+
+| 软件名 | 包名 | amd64 | arm64 |
+| ----- | ---- | ----- | ----- |
+| [Motrix](https://github.com/agalwood/Motrix) | motrix | ✅ | ✅ |
+| [MarkText](https://github.com/marktext/marktext) | marktext | ✅ | |
+| [Flameshot](https://github.com/flameshot-org/flameshot) | flameshot | ✅ | ✅ |
+| [Yolx](https://github.com/uiYzzi/Yolx) | yolx | ✅ | |
+
 
 ### 合并自官方 repo
 
