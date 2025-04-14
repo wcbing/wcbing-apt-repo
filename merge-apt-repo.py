@@ -111,10 +111,8 @@ def process_repo(r: dict):
     获取仓库中不同架构子仓库的内容，最后调用 get_latest 去重并保存。
     """
     try:
-        deb_packages = b""
-        for arch, path in r["path"].items():
-            deb_packages += get_remote_packages(r["repo"], path)
-        get_latest(deb_packages)
+        for path in r["path"].values():
+            get_latest(get_remote_packages(r["repo"], path))
     except Exception as e:
         logging.error(f"Error processing repo {r.get('name', 'unknown')}: {e}")
 
@@ -152,17 +150,10 @@ if __name__ == "__main__":
         executor.map(process_repo, repo_list.values())
 
     # 分别输出到不同文件
-    os.makedirs("deb/amd64/", exist_ok=True)
-    os.makedirs("deb/arm64/", exist_ok=True)
-
-    with open("deb/amd64/Packages", "+wb") as f:
-        for i in package_info["amd64"].values():
-            f.write(i)
-        for i in package_info["all"].values():
-            f.write(i)
-
-    with open("deb/arm64/Packages", "+wb") as f:
-        for i in package_info["arm64"].values():
-            f.write(i)
-        for i in package_info["all"].values():
-            f.write(i)
+    for arch in ["amd64", "arm64"]:
+        os.makedirs(f"deb/dists/wcbing/main/binary-{arch}/", exist_ok=True)
+        with open(f"deb/dists/wcbing/main/binary-{arch}/Packages", "+wb") as f:
+            for i in package_info[arch].values():
+                f.write(i)
+            for i in package_info["all"].values():
+                f.write(i)
