@@ -51,7 +51,7 @@
 | 软件名 | 包名 | amd64 | arm64 |
 | ----- | ---- | ----- | ----- |
 | [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | clash-verge | ✅ | ✅ |
-| [FlClash](https://github.com/chen08209/FlClash) | flclash | ✅ | |
+| [FlClash](https://github.com/chen08209/FlClash) | flclash | ✅ | ✅ |
 | [mihomo](https://github.com/MetaCubeX/mihomo) | mihomo | ✅ | ✅ |
 | [hugo](https://github.com/gohugoio/hugo) | hugo | ✅ | ✅ |
 | [RustDesk](https://github.com/rustdesk/rustdesk) | rustdesk | ✅ | ✅ |
