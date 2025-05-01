@@ -16,7 +16,8 @@
     "flclash": {
         "repo": "chen08209/FlClash",
         "file_list": {
-            "amd64": "FlClash-{version}-linux-amd64.deb"
+            "amd64": "FlClash-{version}-linux-amd64.deb",
+            "arm64": "FlClash-{version}-linux-arm64.deb"
         }
     },
     "hugo": {
