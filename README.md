@@ -93,7 +93,8 @@
 | [Sublime Text<br />Sublime Merge](https://www.sublimetext.com/docs/linux_repositories.html) | sublime-text<br />sublime-merge | ✅ | ✅ |
 | [Steam](https://repo.steampowered.com/steam/) | steam-launcher<br />steam-libs-amd64 | ✅ | |
 | [Tailscale](https://pkgs.tailscale.com/stable/) | tailscale<br />tailscale-nginx-auth | ✅ | ✅ |
-| [black-desk 打包](https://github.com/black-desk/debs) | app.typst.typst<br />dev.neovide.neovide<br />dev.zed.zed<br />dev.zed.zed-pre<br />~~io.github.black-desk.debian-tweak<br />io.neovim.neovim<br />io.neovim.neovim-nightly<br />one.metacubex.clash-meta~~<br />org.pimalaya.himalaya | ✅ | |
+| [neovide: wcbing 打包](https://github.com/wcbing-build/neovide-debs) | neovide | ✅ | |
+| [himalaya: wcbing 打包](https://github.com/wcbing-build/himalaya-debs) | himalaya | ✅ | ✅ |
 | [Typora](https://typora.io/#linux) | typora | ✅ | ✅ |
 | [Zotero](https://zotero.retorque.re/file/apt-package-archive/index.html) | zotero<br />zotero-beta<br />zotero6 | ✅ | |
 | [Github CLI](https://cli.github.com/) | gh | ✅ | ✅ |
