@@ -62,12 +62,6 @@
             "mix": "apt/stable/Packages.gz"
         }
     },
-    "black-desk": {
-        "repo": "https://github.com/black-desk/debs/releases/latest/download/",
-        "path": {
-            "amd64": "Packages"
-        }
-    },
     "typora": {
         "repo": "https://typoraio.cn/linux/",
         "path": {
@@ -129,5 +123,17 @@
             "amd64": "dists/gitea/main/binary-amd64/Packages",
             "arm64": "dists/gitea/main/binary-arm64/Packages"
         }
-    }
+    },
+    "neovide": {
+        "repo": "https://github.com/wcbing-build/neovide-debs/releases/latest/download/",
+        "path": {
+            "mix": "Packages"
+        }
+    },
+    "himalaya": {
+        "repo": "https://github.com/wcbing-build/himalaya-debs/releases/latest/download/",
+        "path": {
+            "mix": "Packages"
+        }
+    }    
 }
