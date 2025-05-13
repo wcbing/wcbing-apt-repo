@@ -12,6 +12,9 @@ import requests
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from threading import Lock
+import apt_pkg
+
+apt_pkg.init()  # 初始化 apt_pkg
 
 package_version = {arch: {} for arch in ["all", "amd64", "i386", "arm64"]}
 package_info = {arch: {} for arch in ["all", "amd64", "i386", "arm64"]}
@@ -92,13 +95,8 @@ def get_latest(deb_packages: bytes):
             arch = find_arch.search(v).group(1).decode()
             tmp_version = find_version.search(v).group(1).decode()
             with lock[arch]:
-                if (
-                    name not in package_version[arch]
-                    or os.system(
-                        f"dpkg --compare-versions {tmp_version} gt {package_version[arch][name]}"
-                    )
-                    == 0
-                ):
+                # 使用 apt_pkg 进行版本比较
+                if name not in package_version[arch] or apt_pkg.version_compare(tmp_version, package_version[arch][name]) > 0:
                     package_version[arch][name] = tmp_version
                     package_info[arch][name] = v
         except Exception as e:
