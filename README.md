@@ -67,6 +67,7 @@
 | [Caddy](https://github.com/caddyserver/caddy) | caddy | ✅ | ✅ |
 | [code-server](https://github.com/coder/code-server) | code-server | ✅ | ✅ |
 | [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
+| [Joplin](https://github.com/laurent22/joplin) | joplin | ✅ | |
 
 
 ### 存档或不活跃
