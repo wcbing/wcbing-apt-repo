@@ -111,5 +111,11 @@
         "file_list": {
             "amd64": "dbeaver-ce_{version}_amd64.deb"
         }
+    },
+    "joplin": {
+        "repo": "laurent22/joplin",
+        "file_list": {
+            "amd64": "Joplin-{version}.deb"
+        }
     }
 }
