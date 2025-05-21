@@ -69,6 +69,7 @@
 | [code-server](https://github.com/coder/code-server) | code-server | ✅ | ✅ |
 | [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
 | [Joplin](https://github.com/laurent22/joplin) | joplin | ✅ | |
+| [SPlayer](https://github.com/imsyy/SPlayer) | splayer | ✅ | |
 
 ### 合并自现有 repo
 
