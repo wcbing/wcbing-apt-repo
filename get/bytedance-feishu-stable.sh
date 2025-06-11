@@ -1,8 +1,12 @@
-X64_JSON=$(curl -s "https://www.feishu.cn/api/package_info?platform=10")
-# arm64 https://www.feishu.cn/api/package_info?platform=12
+VERSIONS_JSON=$(curl -fs "https://www.feishu.cn/api/downloads")
 
+# AMD64
 # "version_number": "Linux-x64-deb@V7.22.9"
-VERSION=$(echo $X64_JSON | jq -r ".data.version_number" | cut -d '@' -f 2)
-X64_URL=$(echo $X64_JSON | jq -r ".data.download_link")
+AMD64_VERSION=$(echo $VERSIONS_JSON | jq -r ".versions.Linux_deb_x64.version_number" | cut -d 'V' -f 2)
+AMD64_URL=$(echo $VERSIONS_JSON | jq -r ".versions.Linux_deb_x64.download_link")
+./check_downloader.py bytedance-feishu-stable $AMD64_VERSION $AMD64_URL
 
-./check_downloader.py bytedance-feishu-stable $VERSION $X64_URL
+# ARM64
+ARM64_VERSION=$(echo $VERSIONS_JSON | jq -r ".versions.Linux_deb_arm.version_number" | cut -d 'V' -f 2)
+ARM64_URL=$(echo $VERSIONS_JSON | jq -r ".versions.Linux_deb_arm.download_link")
+./check_downloader.py bytedance-feishu-stable $ARM64_VERSION $ARM64_URL arm64

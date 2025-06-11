@@ -33,7 +33,7 @@
 | [腾讯文档](https://docs.qq.com/home/download) | tdappdesktop | ✅ | ✅ |
 | [百度网盘](https://pan.baidu.com/download) | baidunetdisk | ✅ | |
 | [钉钉](https://www.dingtalk.com/download/) | com.alibabainc.dingtalk | ✅ | ✅ |
-| [飞书](https://www.feishu.cn/download) | bytedance-feishu-stable | ✅ | |
+| [飞书](https://www.feishu.cn/download) | bytedance-feishu-stable | ✅ | ✅ |
 | [Xmind](https://xmind.cn/download/) | xmind-vana | ✅ | |
 | [uTools](https://u.tools/download/) | utools | ✅ | |
 | [360安全浏览器](https://browser.360.net/gc/) | browser360-cn-stable | ✅ | |
