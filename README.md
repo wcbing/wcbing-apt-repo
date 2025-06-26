@@ -41,6 +41,7 @@
 | [向日葵](https://sunlogin.oray.com/download/linux) | sunloginclient<br />提取自 Debian 12 的依赖：<br />gconf2-common<br />libgconf-2-4 | ✅ | |
 | [ToDesk](https://www.todesk.com/linux.html) | todesk | ✅ | |
 | [微信](https://linux.weixin.qq.com/) | wechat | ✅ | ✅ |
+| [kali-undercover](https://www.kali.org/docs/introduction/kali-undercover/) | kali-undercover | ✅ | ✅ |
 
 
 ### Github Releses
