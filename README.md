@@ -71,6 +71,13 @@
 | [Joplin](https://github.com/laurent22/joplin) | joplin | ✅ | |
 | [SPlayer](https://github.com/imsyy/SPlayer) | splayer | ✅ | |
 
+#### Gitee
+
+| 软件名 | 包名 | amd64 | arm64 |
+| ----- | --- | ----- | ----- |
+| [星火应用商店](https://gitee.com/spark-store-project/spark-store) | spark-store | ✅ | ✅ |
+
+
 ### 合并自现有 repo
 
 | 软件仓库 | 包名 | amd64 | arm64 |
