@@ -117,5 +117,13 @@
         "file_list": {
             "amd64": "Joplin-{version}.deb"
         }
+    },
+    "spark-store": {
+        "site": "https://gitee.com",
+        "repo": "spark-store-project/spark-store",
+        "file_list": {
+            "amd64": "spark-store_{releases_tag}_amd64.deb",
+            "arm64": "spark-store_{releases_tag}_arm64.deb"
+        }
     }
 }
