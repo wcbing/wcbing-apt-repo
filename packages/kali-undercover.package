@@ -1,0 +1,22 @@
+Package: kali-undercover
+Architecture: all
+Version: 2025.2.0
+Priority: optional
+Section: misc
+Maintainer: Kali Developers <devel@kali.org>
+Installed-Size: 19510
+Depends: python3:any, fonts-liberation, gir1.2-glib-2.0, libnotify-bin, mousepad, procps, psmisc, xdotool, xfce4, xfce4-datetime-plugin, xfce4-power-manager-plugins, xfce4-pulseaudio-plugin, xfce4-whiskermenu-plugin
+Suggests: gtk2-engines-murrine
+Filename: https://mirrors.cernet.edu.cn/kali/pool/main/k/kali-undercover/kali-undercover_2025.2.0_all.deb
+Size: 7750640
+MD5sum: 0e9d2d64929f8341ae1911478ce67b73
+SHA1: 3ccc76ff06d60bbf40e627efa2733adad3ea8c64
+SHA256: 24dc718af28210f6139a5f9238896c6e1d1bc40a951a9dfc742c51a773334ef6
+SHA512: cb443141fee19af3e99257104ff359cf489929913ce9978a88ea46217e639bc4f582b3dc4ad33ab1b5d88a6fd0a4357757f5e5fecb8a369c7c611c8f78d52e9d
+Description: Kali Undercover Mode
+ Run “kali-undercover” and you will instantly switch your Xfce desktop into
+ a Windows 10 desktop that will no longer draw attention to your activities.
+ .
+ Run it a second time to escape the cover mode and get back your original
+ desktop settings.
+
