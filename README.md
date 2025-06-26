@@ -69,6 +69,7 @@
 | [code-server](https://github.com/coder/code-server) | code-server | ✅ | ✅ |
 | [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
 | [Joplin](https://github.com/laurent22/joplin) | joplin | ✅ | |
+| [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | tinyrdm | ✅ | |
 
 
 #### Gitee
