@@ -70,6 +70,7 @@
 | [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
 | [Joplin](https://github.com/laurent22/joplin) | joplin | ✅ | |
 | [SPlayer](https://github.com/imsyy/SPlayer) | splayer | ✅ | |
+| [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | tinyrdm | ✅ | |
 
 #### Gitee
 
