@@ -131,5 +131,12 @@
         "file_list": {
             "amd64": "tiny-rdm_{version}_linux_amd64_webkit2_41.deb"
         }
+    },
+    "mqttx": {
+        "repo": "emqx/MQTTX",
+        "file_list": {
+            "amd64": "MQTTX_{version}_amd64.deb",
+            "arm64": "MQTTX_{version}_arm64.deb"
+        }
     }
 }
