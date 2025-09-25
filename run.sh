@@ -5,17 +5,10 @@
 find get -type f -name "*.sh" -exec sh {} \;
 
 # generate the Packages file
-## generate the local Packages file
-cd deb
-apt-ftparchive packages . > tmpPackages
-sed -i "s|\./\(https\?\):/|\1://|g" tmpPackages
-
-cd ..
-
 ## merge the Packages file from local package
 cat $(find packages -name "*.package") >> deb/tmpPackages
 
-# merge the Packages files from third-party repositories
+## merge the Packages files from third-party repositories
 ./merge-apt-repo.py --local deb/tmpPackages
 
 # generate the Release file
