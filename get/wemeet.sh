@@ -13,8 +13,8 @@ download_list_url="https://meeting.tencent.com/web-service/query-download-info?q
 JSON=$(curl -s $download_list_url)
 
 VERSION=$(echo $JSON | jq -r '."info-list"[0].version')
-X64_URL=$(echo $JSON | jq -r '."info-list"[0].url')
-./check_downloader.py wemeet $VERSION $X64_URL
+AMD64_URL=$(echo $JSON | jq -r '."info-list"[0].url')
+./check_downloader.py wemeet $VERSION $AMD64_URL amd64
 
 # ARM64
 VERSION=$(echo $JSON | jq -r '."info-list"[1].version')
