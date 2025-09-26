@@ -26,7 +26,7 @@ def download(url: str) -> None:
     subprocess.run(["curl", "-H", f"User-Agent: {USER_AGENT}", "-fsLo", file_path, url])
 
 
-def check_download(name: str, version: str, url: str, arch: str="amd64") -> None:
+def check_download(name: str, version: str, url: str, arch: str) -> None:
     """Check and handle package download/update."""
     logging.info("%s:%s = %s", name, arch, version)
 
@@ -67,11 +67,11 @@ def check_download(name: str, version: str, url: str, arch: str="amd64") -> None
 
 if __name__ == "__main__":
     args = sys.argv
-    if len(args) in (4, 5):
+    if len(args) == 5:
         check_download(*args[1:])
     elif len(args) > 1:
         logging.error(f"Unknown Args: {args[1:]}")
     else:
-        print(f"Usage: {args[0]} <package_name> <version> <url> [arch]")
+        print(f"Usage: {args[0]} <package_name> <version> <url> <arch>")
         print("options:")
-        print("    arch: amd64, arm64, all. default is amd64")
+        print("    arch: amd64, arm64, all.")
