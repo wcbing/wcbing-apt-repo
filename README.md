@@ -71,6 +71,7 @@
 | [Joplin](https://github.com/laurent22/joplin) | joplin | ✅ | |
 | [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | tinyrdm | ✅ | |
 | [MQTTX](https://github.com/emqx/MQTTX) | mqttx | ✅ | ✅ |
+| [SPlayer](https://github.com/imsyy/SPlayer) | splayer | ✅ | |
 
 
 #### Gitee
