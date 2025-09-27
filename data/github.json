@@ -138,5 +138,11 @@
             "amd64": "MQTTX_{version}_amd64.deb",
             "arm64": "MQTTX_{version}_arm64.deb"
         }
+    },
+    "splayer": {
+        "repo": "imsyy/SPlayer",
+        "file_list": {
+            "amd64": "splayer-{version}-amd64.deb"
+        }
     }
 }
