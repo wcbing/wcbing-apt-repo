@@ -72,6 +72,7 @@
 | [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | tinyrdm | ✅ | |
 | [MQTTX](https://github.com/emqx/MQTTX) | mqttx | ✅ | ✅ |
 | [SPlayer](https://github.com/imsyy/SPlayer) | splayer | ✅ | |
+| [WinBoat](https://github.com/TibixDev/winboat) | winboat | ✅ | |
 
 
 #### Gitee

@@ -144,5 +144,11 @@
         "file_list": {
             "amd64": "splayer-{version}-amd64.deb"
         }
+    },
+    "winboat": {
+        "repo": "TibixDev/winboat",
+        "file_list": {
+            "amd64": "winboat-{version}-amd64.deb"
+        }
     }
 }
