@@ -73,6 +73,7 @@
 | [MQTTX](https://github.com/emqx/MQTTX) | mqttx | ✅ | ✅ |
 | [SPlayer](https://github.com/imsyy/SPlayer) | splayer | ✅ | |
 | [WinBoat](https://github.com/TibixDev/winboat) | winboat | ✅ | |
+| [fooyin](https://github.com/fooyin/fooyin) | fooyin | ✅ | |
 
 
 #### Gitee
