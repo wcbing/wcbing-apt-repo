@@ -31,6 +31,7 @@
 | [QQ音乐](https://y.qq.com/download/download.html) | qqmusic | ✅ | |
 | [腾讯会议](https://meeting.tencent.com/download/) | wemeet | ✅ | ✅ |
 | [腾讯文档](https://docs.qq.com/home/download) | tdappdesktop | ✅ | ✅ |
+| [WPS Office](https://linux.wps.cn/) | wps-office | ✅ | |
 | [百度网盘](https://pan.baidu.com/download) | baidunetdisk | ✅ | |
 | [钉钉](https://www.dingtalk.com/download/) | com.alibabainc.dingtalk | ✅ | ✅ |
 | [飞书](https://www.feishu.cn/download) | bytedance-feishu-stable | ✅ | ✅ |
@@ -119,7 +120,6 @@
 | [lazydocker: wcbing 打包](https://github.com/wcbing-build/lazydocker-debs) | lazydocker | ✅ | ✅ |
 | [lazygit: wcbing 打包](https://github.com/wcbing-build/lazygit-debs) | lazygit | ✅ | ✅ |
 | [NextTrace](https://github.com/nxtrace/nexttrace-debs) | nexttrace | ✅ | ✅ |
-| [Debian 中文社区软件源](https://github.com/debiancn/repo)（[镜像](https://help.mirrors.cernet.edu.cn/debiancn/)） | anydesk<br />marktext<br />wps-office<br />[更多](https://github.com/debiancn/repo) | ✅ | |
 | [Gitea](https://gitlab.com/packaging/gitea)（[镜像](https://mirrors.ustc.edu.cn/help/packaging-gitea.html)） | gitea | ✅ | ✅ |
 | [AnyDesk](https://deb.anydesk.com/howto.html) | anydesk | ✅ | ✅ |
 | [Spotify](https://www.spotify.com/sg-zh/download/linux/) | spotify-client | ✅ | |
