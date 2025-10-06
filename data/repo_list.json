@@ -141,5 +141,12 @@
         "path": {
             "mix": "Packages"
         }
-    }    
+    },
+    "anydesk": {
+        "repo": "https://deb.anydesk.com/",
+        "path": {
+            "amd64": "dists/all/main/binary-amd64/Packages",
+            "arm64": "dists/all/main/binary-arm64/Packages"
+        }
+    }
 }
