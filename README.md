@@ -74,6 +74,7 @@
 | [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | tinyrdm | ✅ | |
 | [MQTTX](https://github.com/emqx/MQTTX) | mqttx | ✅ | ✅ |
 | [WinBoat](https://github.com/TibixDev/winboat) | winboat | ✅ | |
+| [fooyin](https://github.com/fooyin/fooyin) | fooyin | ✅ | |
 
 #### Gitee
 

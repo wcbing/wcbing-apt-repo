@@ -151,5 +151,11 @@
             "amd64": "winboat-{version}-amd64.deb",
             "arm64": "winboat-{version}-arm64.deb"
         }
+    },
+    "fooyin": {
+        "repo": "fooyin/fooyin",
+        "file_list": {
+            "amd64": "fooyin_{version}-trixie_amd64.deb"
+        }
     }
 }
