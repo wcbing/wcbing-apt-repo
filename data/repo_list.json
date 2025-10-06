@@ -117,12 +117,6 @@
             "mix": "Packages"
         }
     },
-    "debiancn": {
-        "repo": "https://mirrors.cernet.edu.cn/debiancn/",
-        "path": {
-            "amd64": "dists/bookworm/main/binary-amd64/Packages.gz"
-        }
-    },
     "gitea": {
         "repo": "https://mirrors.ustc.edu.cn/packaging-gitea/",
         "path": {
