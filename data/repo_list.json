@@ -11,6 +11,12 @@
             "amd64": "dists/stable/main/binary-amd64/Packages.gz"
         }
     },
+    "chrome-remote-desktop": {
+        "repo": "https://dl.google.com/linux/chrome-remote-desktop/deb/",
+        "path": {
+            "amd64": "dists/stable/main/binary-amd64/Packages.gz"
+        }
+    },
     "termius": {
         "repo": "https://deb.termius.com/",
         "path": {
