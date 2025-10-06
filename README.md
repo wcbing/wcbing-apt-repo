@@ -75,6 +75,7 @@
 | [MQTTX](https://github.com/emqx/MQTTX) | mqttx | ✅ | ✅ |
 | [WinBoat](https://github.com/TibixDev/winboat) | winboat | ✅ | |
 | [fooyin](https://github.com/fooyin/fooyin) | fooyin | ✅ | |
+| [Simplenote](https://github.com/Automattic/simplenote-electron) | simplenote | ✅ | ✅ |
 
 #### Gitee
 
