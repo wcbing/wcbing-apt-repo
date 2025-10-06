@@ -148,5 +148,11 @@
             "amd64": "dists/all/main/binary-amd64/Packages",
             "arm64": "dists/all/main/binary-arm64/Packages"
         }
+    },
+    "spotify-client": {
+        "repo": "https://repository.spotify.com/",
+        "path": {
+            "amd64": "dists/stable/non-free/binary-amd64/Packages"
+        }
     }
 }
