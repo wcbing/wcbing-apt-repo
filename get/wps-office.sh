@@ -21,7 +21,9 @@ decrypt() {
 
 WEB_CONTENT=$(curl -fs https://linux.wps.cn/)
 VERSION=$(echo $WEB_CONTENT | grep -o "<p class=\"banner_txt\">[0-9.]*</p>" | sed 's/<p class=\"banner_txt\">\(.*\)<\/p>/\1/')
-X64_ORI_URL=$(echo $WEB_CONTENT | grep -o "https://[0-9a-zA-Z_\/\.\-]*amd64\.deb" | head -n 1)
-X64_URL=$(decrypt $X64_ORI_URL)
+AMD64_ORI_URL=$(echo $WEB_CONTENT | grep -o "https://[0-9a-zA-Z_\/\.\-]*amd64\.deb" | head -n 1)
 
-./check_downloader.py wps-office $VERSION $X64_URL
+# AMD64_URL=$(decrypt $AMD64_ORI_URL)
+AMD64_URL="https://wps302.wcbing.workers.dev/$AMD64_ORI_URL"
+
+./check_downloader.py wps-office $VERSION $AMD64_URL amd64
