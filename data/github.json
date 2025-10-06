@@ -156,5 +156,12 @@
         "file_list": {
             "amd64": "fooyin_{version}-trixie_amd64.deb"
         }
+    },
+    "simplenote": {
+        "repo": "Automattic/simplenote-electron",
+        "file_list": {
+            "amd64": "Simplenote-linux-{version}-amd64.deb",
+            "arm64": "Simplenote-linux-{version}-arm64.deb"
+        }
     }
 }

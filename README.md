@@ -75,6 +75,7 @@
 | [SPlayer](https://github.com/imsyy/SPlayer) | splayer | ✅ | |
 | [WinBoat](https://github.com/TibixDev/winboat) | winboat | ✅ | |
 | [fooyin](https://github.com/fooyin/fooyin) | fooyin | ✅ | |
+| [Simplenote](https://github.com/Automattic/simplenote-electron) | simplenote | ✅ | ✅ |
 
 #### Gitee
 
