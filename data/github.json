@@ -163,5 +163,12 @@
             "amd64": "Simplenote-linux-{version}-amd64.deb",
             "arm64": "Simplenote-linux-{version}-arm64.deb"
         }
+    },
+    "yesplaymusic": {
+        "repo": "qier222/YesPlayMusic",
+        "file_list": {
+            "amd64": "yesplaymusic_{version}_amd64.deb",
+            "arm64": "yesplaymusic_{version}_arm64.deb"
+        }
     }
 }
