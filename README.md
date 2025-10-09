@@ -76,6 +76,7 @@
 | [WinBoat](https://github.com/TibixDev/winboat) | winboat | ✅ | |
 | [fooyin](https://github.com/fooyin/fooyin) | fooyin | ✅ | |
 | [Simplenote](https://github.com/Automattic/simplenote-electron) | simplenote | ✅ | ✅ |
+| [YesPlayMusic](https://github.com/qier222/YesPlayMusic) | yesplaymusic | ✅ | ✅ |
 
 
 #### Gitee
