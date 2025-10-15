@@ -124,6 +124,7 @@
 | [Gitea](https://gitlab.com/packaging/gitea)（[镜像](https://mirrors.ustc.edu.cn/help/packaging-gitea.html)） | gitea | ✅ | ✅ |
 | [AnyDesk](https://deb.anydesk.com/howto.html) | anydesk | ✅ | ✅ |
 | [Spotify](https://www.spotify.com/sg-zh/download/linux/) | spotify-client | ✅ | |
+| [Free Download Manager](https://www.freedownloadmanager.org/zh/download-fdm-for-linux.htm) | freedownloadmanager | ✅ | |
 
 ## 自建仓库
 
