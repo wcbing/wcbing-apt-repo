@@ -148,5 +148,11 @@
         "path": {
             "amd64": "dists/stable/non-free/binary-amd64/Packages"
         }
+    },
+    "freedownloadmanager": {
+        "repo": "https://debrepo.freedownloadmanager.org/",
+        "path": {
+            "amd64": "dists/jammy/main/binary-amd64/Packages.gz"
+        }
     }
 }
