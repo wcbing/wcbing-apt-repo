@@ -148,8 +148,7 @@
     "winboat": {
         "repo": "TibixDev/winboat",
         "file_list": {
-            "amd64": "winboat-{version}-amd64.deb",
-            "arm64": "winboat-{version}-arm64.deb"
+            "amd64": "winboat-{version}-amd64.deb"
         }
     },
     "fooyin": {
