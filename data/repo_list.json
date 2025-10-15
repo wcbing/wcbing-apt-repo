@@ -144,7 +144,7 @@
         }
     },
     "spotify-client": {
-        "repo": "http://repository.spotify.com/",
+        "repo": "https://repository.spotify.com/",
         "path": {
             "amd64": "dists/stable/non-free/binary-amd64/Packages"
         }
