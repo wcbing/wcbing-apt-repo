@@ -9,7 +9,7 @@
     "mihomo": {
         "repo": "MetaCubeX/mihomo",
         "file_list": {
-            "amd64": "mihomo-linux-amd64-compatible-{releases_tag}.deb",
+            "amd64": "mihomo-linux-amd64-{releases_tag}.deb",
             "arm64": "mihomo-linux-arm64-{releases_tag}.deb"
         }
     },
