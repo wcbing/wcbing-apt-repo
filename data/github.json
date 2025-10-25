@@ -142,7 +142,7 @@
     "splayer": {
         "repo": "imsyy/SPlayer",
         "file_list": {
-            "amd64": "splayer_{version}_amd64.deb"
+            "amd64": "splayer-{version}-amd64.deb"
         }
     },
     "winboat": {
