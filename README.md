@@ -126,6 +126,7 @@
 | [Spotify](https://www.spotify.com/sg-zh/download/linux/) | spotify-client | ✅ | |
 | [Free Download Manager](https://www.freedownloadmanager.org/zh/download-fdm-for-linux.htm) | freedownloadmanager | ✅ | |
 | [WezTerm](https://wezterm.org/install/linux.html#using-the-apt-repo) | wezterm<br />wezterm-nightly | ✅ | ✅ |
+| [Remote Desktop Manager](https://docs.devolutions.net/rdm/installation/client/?tab=linux) | remotedesktopmanager | ✅ | ✅ |
 
 ## 自建仓库
 

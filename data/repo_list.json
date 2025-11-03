@@ -160,5 +160,12 @@
         "path": {
             "mix": "Packages"
         }
+    },
+    "remotedesktopmanager": {
+        "repo": "https://dl.cloudsmith.io/public/devolutions/rdm/deb/debian/",
+        "path": {
+            "amd64": "dists/trixie/main/binary-amd64/Packages.gz",
+            "arm64": "dists/trixie/main/binary-arm64/Packages.gz"
+        }
     }
 }
