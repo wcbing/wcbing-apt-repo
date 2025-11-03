@@ -76,10 +76,6 @@ def get_remote_packages(repo_url: str, file_path: str) -> bytes:
         else:  # Packages
             content = response.content
 
-        # complete the two newlines if the ending is less than two newlines
-        # 结尾不足两个换行符的话，补全两个换行符
-        if not content.endswith(b"\n\n"):
-            content += b"\n"
         return content.replace(b"Filename: ", f"Filename: {repo_url}".encode())
     except Exception as e:
         logging.error(f"Error fetching packages: {e}")
@@ -91,10 +87,15 @@ def split_latest(packages_file_content: bytes):
     split the information of each packet, deduplication and store the latest in infoList
     将每个包的信息分割开，去重并将最新的存放到 infoList 中
     """
-    packages_file_content = re.sub(
-        rb"^Package: ", b"{{start}}Package: ", packages_file_content, flags=re.MULTILINE
-    )
-    package_list = packages_file_content.split(b"{{start}}")[1:]
+    # Remove trailing empty lines first
+    packages_file_content = packages_file_content.rstrip(b"\n\r\t ")
+
+    # split on two or more consecutive blank lines
+    package_list = [
+        part + b"\n\n"
+        for part in re.split(rb"(?:\r?\n){2,}", packages_file_content)
+        if part.strip()
+    ]
 
     find_name = re.compile(rb"Package: (.+)")
     find_arch = re.compile(rb"Architecture: (.+)")
