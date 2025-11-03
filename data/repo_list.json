@@ -154,5 +154,11 @@
         "path": {
             "amd64": "dists/jammy/main/binary-amd64/Packages.gz"
         }
+    },
+    "wezterm": {
+        "repo": "https://apt.fury.io/wez/",
+        "path": {
+            "mix": "Packages"
+        }
     }
 }
