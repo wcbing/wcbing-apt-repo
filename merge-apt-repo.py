@@ -97,9 +97,9 @@ def split_latest(packages_file_content: bytes):
         if part.strip()
     ]
 
-    find_name = re.compile(rb"Package: (.+)")
-    find_arch = re.compile(rb"Architecture: (.+)")
-    find_version = re.compile(rb"Version: (.+)")
+    find_name = re.compile(rb"Package:[ ]*(.+)")
+    find_arch = re.compile(rb"Architecture:[ ]*(.+)")
+    find_version = re.compile(rb"Version:[ ]*(.+)")
 
     for package in package_list:
         name = "unknown"
