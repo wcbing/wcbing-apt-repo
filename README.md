@@ -43,6 +43,7 @@
 | [ToDesk](https://www.todesk.com/linux.html) | todesk | ✅ | |
 | [微信](https://linux.weixin.qq.com/) | wechat | ✅ | ✅ |
 | [kali-undercover](https://www.kali.org/docs/introduction/kali-undercover/) | kali-undercover | ✅ | ✅ |
+| [欧路词典](https://www.eudic.net/v4/en/app/download) | eudic | ✅ | |
 
 
 ### Github Releses
