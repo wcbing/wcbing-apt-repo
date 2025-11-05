@@ -10,7 +10,7 @@ from threading import Lock
 DEB_BASE_DIR = "deb"
 PACKAGES_DIR = "packages"
 DB_DIR = "data"
-USER_AGENT = "Debian APT-HTTP/1.3 (2.6.1)"  # from Debian 12
+USER_AGENT = "Debian APT-HTTP/1.3 (3.0.3)"  # from Debian 13
 
 version_lock = Lock()
 
@@ -58,7 +58,7 @@ def check_download(name: str, version: str, url: str, arch: str) -> None:
 
     file_path = os.path.join(DEB_BASE_DIR, arch, f"{name}_{version}_{arch}.deb")
     local_version = None
-    db_path = os.path.join("data", f"{DEB_BASE_DIR}.db")
+    db_path = os.path.join(DB_DIR, f"{DEB_BASE_DIR}.db")
     # get local version
     with version_lock, sqlite3.connect(db_path) as conn:
         res = conn.execute(
@@ -74,6 +74,7 @@ def check_download(name: str, version: str, url: str, arch: str) -> None:
     os.makedirs(os.path.join(DEB_BASE_DIR, arch), exist_ok=True)
     if not download(url, file_path):
         return
+    logging.info(f"Downloaded {name}:{arch} ({version})")
     os.makedirs(os.path.join(PACKAGES_DIR, arch), exist_ok=True)
     if not scan(name, arch, url, file_path):
         return
