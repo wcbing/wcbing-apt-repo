@@ -48,8 +48,7 @@
 ### Git Releses
 #### Github
 
-> 因服务器资源有限，本仓库可能无法收录部分大文件。  
-> 有收录需求也可投稿至星火商店的 [Github Releases 更新配置仓库](https://gitee.com/spark-building-service/github)，其和本部分内容是同源的。
+> 也可投稿至星火商店的 [Github Releases 更新配置仓库](https://gitee.com/spark-building-service/github)，其和本部分内容是同源的。
 
 | 软件名 | 包名 | amd64 | arm64 |
 | ----- | ---- | ----- | ----- |

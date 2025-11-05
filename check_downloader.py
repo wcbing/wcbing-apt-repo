@@ -74,6 +74,7 @@ def check_download(name: str, version: str, url: str, arch: str) -> None:
     os.makedirs(os.path.join(DEB_BASE_DIR, arch), exist_ok=True)
     if not download(url, file_path):
         return
+    logging.info(f"Downloaded {name}:{arch} ({version})")
     os.makedirs(os.path.join(PACKAGES_DIR, arch), exist_ok=True)
     if not scan(name, arch, url, file_path):
         return

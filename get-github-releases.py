@@ -7,7 +7,7 @@ import re
 from concurrent.futures import ThreadPoolExecutor, wait
 from check_downloader import check_download
 
-github_info_list = {}
+git_repo_list = {}
 
 CONFIG = {"data_dir": "data", "proxy": "", "thread": 5}
 
@@ -31,11 +31,11 @@ if __name__ == "__main__":
 
     # read all repo info 读取所有仓库配置
     with open(os.path.join(CONFIG["data_dir"], "github.json"), "r") as f:
-        github_info_list = json.load(f)
+        git_repo_list = json.load(f)
 
     tasks = []
     with ThreadPoolExecutor(max_workers=CONFIG["thread"]) as executor:
-        for name, repo in github_info_list.items():
+        for name, repo in git_repo_list.items():
             if "site" in repo:
                 repo_url = os.path.join(repo["site"], repo['repo'])
             else:
