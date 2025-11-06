@@ -24,6 +24,7 @@ packages = {arch: {} for arch in arch_List} # 存放用于生成 Packages 的内
     "arch": {
         "package1": {
             "version": "1.0.0",
+            "url": "https://example.com/package1.deb",
             "package": ""
         }
     }
@@ -99,6 +100,7 @@ def split_latest(packages_file_content: bytes):
 
     find_name = re.compile(rb"Package:[ ]*(.+)")
     find_arch = re.compile(rb"Architecture:[ ]*(.+)")
+    find_url = re.compile(rb"Filename:[ ]*(.+)")
     find_version = re.compile(rb"Version:[ ]*(.+)")
 
     for package in package_list:
@@ -106,6 +108,7 @@ def split_latest(packages_file_content: bytes):
         try:
             name = find_name.search(package).group(1).decode()
             arch = find_arch.search(package).group(1).decode()
+            url = find_url.search(package).group(1).decode()
             tmp_version = find_version.search(package).group(1).decode()
             with lock[arch]:
                 # 使用 apt_pkg 进行版本比较
@@ -113,7 +116,7 @@ def split_latest(packages_file_content: bytes):
                     name not in packages[arch]
                     or version_compare(tmp_version, packages[arch][name]["version"]) > 0
                 ):
-                    packages[arch][name] = {"package": package, "version": tmp_version}
+                    packages[arch][name] = {"version": tmp_version, "url": url, "package": package}
         except Exception as e:
             logging.error(f"Error processing package {name}: {e}")
     return
@@ -170,3 +173,9 @@ if __name__ == "__main__":
                 f.write(i["package"])
             for i in packages["all"].values():
                 f.write(i["package"])
+
+    # 输出 packages.json，用于展示仓库内容
+    for arch in arch_List:
+        for i in packages[arch].values():
+            i.pop("package")
+    json.dump(packages, open("deb/list/packages.json", "w"), indent=4)
