@@ -4,9 +4,6 @@
 ./get-github-releases.py
 find get -type f -name "*.sh" -exec sh {} \;
 
-# generate the html
-./gen-list-html.py
-
 ## merge the Packages file from local package
 cat $(find packages -name "*.package") > deb/tmpPackages
 
