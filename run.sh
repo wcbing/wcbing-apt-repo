@@ -12,13 +12,6 @@ cat $(find packages -name "*.package") > deb/tmpPackages
 
 # generate the Release file
 cd deb/dists/wcbing && \
-echo 'Origin: wcbing APT Repo
-Label: wcbing
-Suite: wcbing
-Codename: wcbing
-Architectures: amd64 arm64
-Components: main
-Description: wcbing APT Repo || wcbing 的 APT 仓库' > Release && \
-apt-ftparchive release . >> Release && \
+apt-ftparchive release -c apt-ftparchive.conf . > Release && \
 gpg --yes --detach-sign -a -o Release.gpg Release && \
 gpg --yes --clearsign -o InRelease Release

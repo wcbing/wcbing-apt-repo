@@ -1,4 +1,6 @@
 data/github-local.json
 data/deb.db
-deb/
+*.deb
+*Packages
+*Release*
 __pycache__/
