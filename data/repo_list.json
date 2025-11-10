@@ -1,4 +1,10 @@
 {
+    "git-releases": {
+        "repo": "",
+        "path": {
+            "mix": "https://github.com/wcbing-apt-repo/git-releases-to-apt-repo/releases/latest/download/Packages"
+        }
+    },
     "google-chrome": {
         "repo": "https://dl.google.com/linux/chrome/deb/",
         "path": {
