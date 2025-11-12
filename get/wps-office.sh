@@ -26,6 +26,6 @@ AMD64_ORI_URL=$(echo $WEB_CONTENT | grep -o "https://[0-9a-zA-Z_\/\.\-]*amd64\.d
 # AMD64_URL=$(decrypt $AMD64_ORI_URL)
 # 使用 CloudFlare Workers 动态生成重定向链接，其基本逻辑如上方 JS 代码所示。
 # 这样 Packages 中固定链接也可重定向至官网，不给官方白嫖流量的机会。
-AMD64_URL="https://wps302.wcbing.workers.dev/$AMD64_ORI_URL"
+AMD64_URL="https://wps302.wcbing.top/$AMD64_ORI_URL"
 
 ./check_downloader.py wps-office $VERSION $AMD64_URL amd64
