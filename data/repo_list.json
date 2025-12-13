@@ -167,5 +167,11 @@
             "amd64": "dists/trixie/main/binary-amd64/Packages.gz",
             "arm64": "dists/trixie/main/binary-arm64/Packages.gz"
         }
+    },
+    "discord": {
+        "repo": "https://ppa.javinator9889.com/",
+        "path": {
+            "amd64": "dists/all/main/binary-amd64/Packages.gz"
+        }
     }
 }

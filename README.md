@@ -128,6 +128,7 @@
 | [Free Download Manager](https://www.freedownloadmanager.org/zh/download-fdm-for-linux.htm) | freedownloadmanager | ✅ | |
 | [WezTerm](https://wezterm.org/install/linux.html#using-the-apt-repo) | wezterm<br />wezterm-nightly | ✅ | ✅ |
 | [Remote Desktop Manager](https://docs.devolutions.net/rdm/installation/client/?tab=linux) | remotedesktopmanager | ✅ | ✅ |
+| [Discord](https://github.com/Javinator9889/Discord-PPA) 第三方仓库| discord | ✅ | |
 
 ## 自建仓库
 
