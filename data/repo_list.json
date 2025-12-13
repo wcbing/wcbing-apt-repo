@@ -173,5 +173,11 @@
         "path": {
             "amd64": "dists/all/main/binary-amd64/Packages.gz"
         }
+    },
+    "lutris": {
+        "repo": "https://download.opensuse.org/repositories/home:/strycore/Debian_12/",
+        "path": {
+            "all": "Packages.gz"
+        }
     }
 }
