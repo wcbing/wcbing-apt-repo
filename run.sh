@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # check for updates
-./get-github-releases.py
 find get -type f -name "*.sh" -exec sh {} \;
 
 # generate the Packages file

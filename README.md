@@ -47,55 +47,10 @@
 
 
 ### Git Releses
-#### Github
 
-> 也可投稿至星火商店的 [Github Releases 更新配置仓库](https://gitee.com/spark-building-service/github)，其和本部分内容是同源的。
+收录使用 Github Releases 等分发 deb 包的软件。
 
-| 软件名 | 包名 | amd64 | arm64 |
-| ----- | ---- | ----- | ----- |
-| [Clash Verge Rev](https://github.com/clash-verge-rev/clash-verge-rev) | clash-verge | ✅ | ✅ |
-| [FlClash](https://github.com/chen08209/FlClash) | flclash | ✅ | ✅ |
-| [mihomo](https://github.com/MetaCubeX/mihomo) | mihomo | ✅ | ✅ |
-| [hugo](https://github.com/gohugoio/hugo) | hugo | ✅ | ✅ |
-| [RustDesk](https://github.com/rustdesk/rustdesk) | rustdesk | ✅ | ✅ |
-| [Obsidian](https://github.com/obsidianmd/obsidian-releases) | obsidian | ✅ | |
-| [Foliate](https://github.com/johnfactotum/foliate) | foliate |  ✅ | ✅ |
-| [Tabby](https://github.com/Eugeny/tabby) | tabby-terminal | ✅ | ✅ |
-| [Pandoc](https://github.com/jgm/pandoc) | pandoc | ✅ | ✅ |
-| [LocalSend](https://github.com/localsend/localsend) | localsend | ✅ | ✅ |
-| [PeaZip](https://github.com/peazip/PeaZip) | peazip | ✅ | |
-| [Neovim/Nvim](https://github.com/neovim/neovim-releases) | neovim | ✅ | |
-| [Hiddify](https://github.com/hiddify/hiddify-app) | hiddify | ✅ | |
-| [Cloudflare Tunnel](https://github.com/cloudflare/cloudflared) | cloudflared | ✅ | ✅ |
-| [Caddy](https://github.com/caddyserver/caddy) | caddy | ✅ | ✅ |
-| [code-server](https://github.com/coder/code-server) | code-server | ✅ | ✅ |
-| [DBeaver](https://github.com/dbeaver/dbeaver) | dbeaver-ce | ✅ | |
-| [Joplin](https://github.com/laurent22/joplin) | joplin | ✅ | |
-| [Tiny RDM](https://github.com/tiny-craft/tiny-rdm) | tinyrdm | ✅ | |
-| [MQTTX](https://github.com/emqx/MQTTX) | mqttx | ✅ | ✅ |
-| [SPlayer](https://github.com/imsyy/SPlayer) | splayer | ✅ | |
-| [WinBoat](https://github.com/TibixDev/winboat) | winboat | ✅ | |
-| [fooyin](https://github.com/fooyin/fooyin) | fooyin | ✅ | |
-| [Simplenote](https://github.com/Automattic/simplenote-electron) | simplenote | ✅ | ✅ |
-| [YesPlayMusic](https://github.com/qier222/YesPlayMusic) | yesplaymusic | ✅ | ✅ |
-
-
-#### Gitee
-
-| 软件名 | 包名 | amd64 | arm64 |
-| ----- | --- | ----- | ----- |
-| [星火应用商店](https://gitee.com/spark-store-project/spark-store) | spark-store | ✅ | ✅ |
-
-
-#### 存档或不活跃
-
-| 软件名 | 包名 | amd64 | arm64 |
-| ----- | ---- | ----- | ----- |
-| [Motrix](https://github.com/agalwood/Motrix) | motrix | ✅ | ✅ |
-| [MarkText](https://github.com/marktext/marktext) | marktext | ✅ | |
-| [Flameshot](https://github.com/flameshot-org/flameshot) | flameshot | ✅ | ✅ |
-| [Yolx](https://github.com/uiYzzi/Yolx) | yolx | ✅ | |
-
+现已迁移至独立仓库，直接利用 Github 服务器来高速下载、提取软件包的元信息。详见：https://github.com/wcbing-apt-repo/git-releases-to-apt-repo
 
 ### 合并自官方仓库
 
