@@ -54,6 +54,8 @@
 
 ### 合并自官方仓库
 
+> 含部分官方承认的第三方仓库
+
 | 软件仓库 | 包名 | amd64 | arm64 |
 | ------ | ---- | ----- | ----- |
 | [Mozilla Firefox](https://support.mozilla.org/zh-CN/kb/install-firefox-linux) | firefox<br />firefox_beta<br />firefox_devedition<br />firefox_nightly<br />firefox_esr<br />mozillavpn | ✅ | ✅ |
@@ -67,15 +69,9 @@
 | [Sublime Text<br />Sublime Merge](https://www.sublimetext.com/docs/linux_repositories.html) | sublime-text<br />sublime-merge | ✅ | ✅ |
 | [Steam](https://repo.steampowered.com/steam/) | steam-launcher<br />steam-libs-amd64 | ✅ | |
 | [Tailscale](https://pkgs.tailscale.com/stable/) | tailscale<br />tailscale-nginx-auth | ✅ | ✅ |
-| [neovide: wcbing 打包](https://github.com/wcbing-build/neovide-debs) | neovide | ✅ | |
-| [himalaya: wcbing 打包](https://github.com/wcbing-build/himalaya-debs) | himalaya | ✅ | ✅ |
 | [Typora](https://typora.io/#linux) | typora | ✅ | ✅ |
 | [Zotero](https://zotero.retorque.re/file/apt-package-archive/index.html) | zotero<br />zotero-beta<br />zotero6 | ✅ | |
 | [Github CLI](https://cli.github.com/) | gh | ✅ | ✅ |
-| [dufs: wcbing 打包](https://github.com/wcbing-build/dufs-debs) | dufs | ✅ | ✅ |
-| [frp: wcbing 打包](https://github.com/wcbing-build/frp-debs) | frps<br />frpc | ✅ | ✅ |
-| [lazydocker: wcbing 打包](https://github.com/wcbing-build/lazydocker-debs) | lazydocker | ✅ | ✅ |
-| [lazygit: wcbing 打包](https://github.com/wcbing-build/lazygit-debs) | lazygit | ✅ | ✅ |
 | [NextTrace](https://github.com/nxtrace/nexttrace-debs) | nexttrace | ✅ | ✅ |
 | [Gitea](https://gitlab.com/packaging/gitea)（[镜像](https://mirrors.ustc.edu.cn/help/packaging-gitea.html)） | gitea | ✅ | ✅ |
 | [AnyDesk](https://deb.anydesk.com/howto.html) | anydesk | ✅ | ✅ |
@@ -85,8 +81,21 @@
 | [Remote Desktop Manager](https://docs.devolutions.net/rdm/installation/client/?tab=linux) | remotedesktopmanager | ✅ | ✅ |
 | [Discord](https://github.com/Javinator9889/Discord-PPA) 第三方仓库| discord | ✅ | |
 | [Lutris](https://lutris.net/downloads) | lutris | ✅ | ✅ |
-| [File Browser: wcbing 打包](https://github.com/wcbing-build/filebrowser-debs) | filebrowser | ✅ | ✅ |
-| [Microsoft Edit: wcbing 打包](https://github.com/wcbing-build/msedit-debs) | msedit | ✅ | ✅ |
+
+
+### 自行打包的开源软件
+
+| 软件仓库 | 包名 | amd64 | arm64 |
+| ------ | ---- | ----- | ----- |
+| [Dufs](https://github.com/wcbing-build/dufs-debs) | dufs | ✅ | ✅ |
+| [frp](https://github.com/wcbing-build/frp-debs) | frps<br />frpc | ✅ | ✅ |
+| [Lazydocker](https://github.com/wcbing-build/lazydocker-debs) | lazydocker | ✅ | ✅ |
+| [Lazygit](https://github.com/wcbing-build/lazygit-debs) | lazygit | ✅ | ✅ |
+| [Neovide](https://github.com/wcbing-build/neovide-debs) | neovide | ✅ | |
+| [Himalaya](https://github.com/wcbing-build/himalaya-debs) | himalaya | ✅ | ✅ |
+| [File Browser](https://github.com/wcbing-build/filebrowser-debs) | filebrowser | ✅ | ✅ |
+| [Microsoft Edit](https://github.com/wcbing-build/msedit-debs) | msedit | ✅ | ✅ |
+
 
 ## 自建仓库
 
