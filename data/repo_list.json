@@ -185,5 +185,11 @@
         "path": {
             "all": "Packages.gz"
         }
+    },
+    "filebrowser": {
+        "repo": "https://github.com/wcbing-build/filebrowser-debs/releases/latest/download/",
+        "path": {
+            "mix": "Packages"
+        }
     }
 }
