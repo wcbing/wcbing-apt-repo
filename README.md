@@ -86,6 +86,7 @@
 | [Discord](https://github.com/Javinator9889/Discord-PPA) 第三方仓库| discord | ✅ | |
 | [Lutris](https://lutris.net/downloads) | lutris | ✅ | ✅ |
 | [File Browser: wcbing 打包](https://github.com/wcbing-build/filebrowser-debs) | filebrowser | ✅ | ✅ |
+| [Microsoft Edit: wcbing 打包](https://github.com/wcbing-build/msedit-debs) | msedit | ✅ | ✅ |
 
 ## 自建仓库
 
