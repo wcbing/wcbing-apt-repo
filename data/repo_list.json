@@ -197,5 +197,11 @@
         "path": {
             "mix": "Packages"
         }
+    },
+    "win11-clipboard-history": {
+        "repo": "https://dl.cloudsmith.io/public/gustavosett/clipboard-manager/deb/debian/",
+        "path": {
+            "amd64": "dists/sid/main/binary-amd64/Packages.gz"
+        }
     }
 }
