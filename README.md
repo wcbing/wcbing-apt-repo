@@ -85,6 +85,7 @@
 | [Remote Desktop Manager](https://docs.devolutions.net/rdm/installation/client/?tab=linux) | remotedesktopmanager | ✅ | ✅ |
 | [Discord](https://github.com/Javinator9889/Discord-PPA) 第三方仓库| discord | ✅ | |
 | [Lutris](https://lutris.net/downloads) | lutris | ✅ | ✅ |
+| [File Browser: wcbing 打包](https://github.com/wcbing-build/filebrowser-debs) | filebrowser | ✅ | ✅ |
 
 ## 自建仓库
 
