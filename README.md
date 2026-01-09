@@ -81,6 +81,7 @@
 | [Remote Desktop Manager](https://docs.devolutions.net/rdm/installation/client/?tab=linux) | remotedesktopmanager | ✅ | ✅ |
 | [Discord](https://github.com/Javinator9889/Discord-PPA) 第三方仓库| discord | ✅ | |
 | [Lutris](https://lutris.net/downloads) | lutris | ✅ | ✅ |
+| [Windows 11 Clipboard History For Linux](https://github.com/gustavosett/Windows-11-Clipboard-History-For-Linux) | win11-clipboard-history | ✅ | |
 
 
 ### 自行打包的开源软件
