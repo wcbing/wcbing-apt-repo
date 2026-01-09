@@ -191,5 +191,11 @@
         "path": {
             "mix": "Packages"
         }
+    },
+    "msedit": {
+        "repo": "https://github.com/wcbing-build/msedit-debs/releases/latest/download/",
+        "path": {
+            "mix": "Packages"
+        }
     }
 }
