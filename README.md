@@ -84,20 +84,6 @@
 | [Windows 11 Clipboard History For Linux](https://github.com/gustavosett/Windows-11-Clipboard-History-For-Linux) | win11-clipboard-history | ✅ | |
 
 
-### 自行打包的开源软件
-
-| 软件仓库 | 包名 | amd64 | arm64 |
-| ------ | ---- | ----- | ----- |
-| [Dufs](https://github.com/wcbing-build/dufs-debs) | dufs | ✅ | ✅ |
-| [frp](https://github.com/wcbing-build/frp-debs) | frps<br />frpc | ✅ | ✅ |
-| [Lazydocker](https://github.com/wcbing-build/lazydocker-debs) | lazydocker | ✅ | ✅ |
-| [Lazygit](https://github.com/wcbing-build/lazygit-debs) | lazygit | ✅ | ✅ |
-| [Neovide](https://github.com/wcbing-build/neovide-debs) | neovide | ✅ | |
-| [Himalaya](https://github.com/wcbing-build/himalaya-debs) | himalaya | ✅ | ✅ |
-| [File Browser](https://github.com/wcbing-build/filebrowser-debs) | filebrowser | ✅ | ✅ |
-| [Microsoft Edit](https://github.com/wcbing-build/msedit-debs) | msedit | ✅ | ✅ |
-
-
 ## 自建仓库
 
 [参见 Wiki](https://github.com/wcbing/wcbing-apt-repo/wiki/self-hosting)

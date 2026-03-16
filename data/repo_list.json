@@ -93,53 +93,11 @@
             "arm64": "dists/stable/main/binary-arm64/Packages.gz"
         }
     },
-    "dufs": {
-        "repo": "https://github.com/wcbing-build/dufs-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
-        }
-    },
-    "frp": {
-        "repo": "https://github.com/wcbing-build/frp-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
-        }
-    },
-    "lazydocker": {
-        "repo": "https://github.com/wcbing-build/lazydocker-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
-        }
-    },
-    "lazygit": {
-        "repo": "https://github.com/wcbing-build/lazygit-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
-        }
-    },
-    "nexttrace": {
-        "repo": "https://github.com/nxtrace/nexttrace-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
-        }
-    },
     "gitea": {
         "repo": "https://mirrors.ustc.edu.cn/packaging-gitea/",
         "path": {
             "amd64": "dists/gitea/main/binary-amd64/Packages",
             "arm64": "dists/gitea/main/binary-arm64/Packages"
-        }
-    },
-    "neovide": {
-        "repo": "https://github.com/wcbing-build/neovide-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
-        }
-    },
-    "himalaya": {
-        "repo": "https://github.com/wcbing-build/himalaya-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
         }
     },
     "anydesk": {
@@ -184,18 +142,6 @@
         "repo": "https://download.opensuse.org/repositories/home:/strycore/Debian_12/",
         "path": {
             "all": "Packages.gz"
-        }
-    },
-    "filebrowser": {
-        "repo": "https://github.com/wcbing-build/filebrowser-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
-        }
-    },
-    "msedit": {
-        "repo": "https://github.com/wcbing-build/msedit-debs/releases/latest/download/",
-        "path": {
-            "mix": "Packages"
         }
     },
     "win11-clipboard-history": {
