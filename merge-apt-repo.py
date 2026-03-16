@@ -166,12 +166,10 @@ if __name__ == "__main__":
         executor.map(process_repo, repo_list.values())
 
     # 分别输出到不同文件
-    for arch in ["amd64", "arm64"]:
+    for arch in ["amd64", "arm64", "all"]:
         os.makedirs(f"deb/dists/wcbing/main/binary-{arch}/", exist_ok=True)
         with open(f"deb/dists/wcbing/main/binary-{arch}/Packages", "+wb") as f:
             for i in packages[arch].values():
-                f.write(i["package"])
-            for i in packages["all"].values():
                 f.write(i["package"])
 
     # 输出 packages.json，用于展示仓库内容
