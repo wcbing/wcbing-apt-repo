@@ -149,5 +149,12 @@
         "path": {
             "amd64": "dists/sid/main/binary-amd64/Packages.gz"
         }
+    },
+    "antigravity": {
+        "repo": "https://us-central1-apt.pkg.dev/projects/antigravity-auto-updater-dev/",
+        "path": {
+            "amd64": "dists/antigravity-debian/main/binary-amd64/Packages",
+            "arm64": "dists/antigravity-debian/main/binary-amd64/Packages"
+        }
     }
 }

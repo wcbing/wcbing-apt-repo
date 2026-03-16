@@ -82,6 +82,7 @@
 | [Discord](https://github.com/Javinator9889/Discord-PPA) 第三方仓库| discord | ✅ | |
 | [Lutris](https://lutris.net/downloads) | lutris | ✅ | ✅ |
 | [Windows 11 Clipboard History For Linux](https://github.com/gustavosett/Windows-11-Clipboard-History-For-Linux) | win11-clipboard-history | ✅ | |
+| [Antigravity](https://antigravity.google/) | antigravity | ✅ | ✅ |
 
 
 ## 自建仓库
