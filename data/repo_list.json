@@ -2,7 +2,7 @@
     "git-releases": {
         "repo": "",
         "path": {
-            "mix": "https://github.com/wcbing-apt-repo/git-releases-to-apt-repo/releases/latest/download/Packages"
+            "mix": "https://github.com/wcbing-apt-repo/releases-to-repo/releases/latest/download/Packages"
         }
     },
     "google-chrome": {
