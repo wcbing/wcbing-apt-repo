@@ -44,6 +44,7 @@
 | [ToDesk](https://www.todesk.com/linux.html) | todesk | ✅ | |
 | [微信](https://linux.weixin.qq.com/) | wechat | ✅ | ✅ |
 | [欧路词典](https://www.eudic.net/v4/en/app/download) | eudic | ✅ | |
+| [有道云笔记](https://note.youdao.com/note-download/) | ynote-desktop | ✅ | |
 
 
 ### Git Releses
