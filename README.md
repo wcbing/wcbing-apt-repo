@@ -45,6 +45,7 @@
 | [微信](https://linux.weixin.qq.com/) | wechat | ✅ | ✅ |
 | [欧路词典](https://www.eudic.net/v4/en/app/download) | eudic | ✅ | |
 | [有道云笔记](https://note.youdao.com/note-download/) | ynote-desktop | ✅ | |
+| [MuseSounds Manager](https://musescore.org/download) | muse-sounds-manager | ✅ | |
 
 
 ### Git Releses
@@ -73,7 +74,6 @@
 | [Typora](https://typora.io/#linux) | typora | ✅ | ✅ |
 | [Zotero](https://zotero.retorque.re/file/apt-package-archive/index.html) | zotero<br />zotero-beta<br />zotero6 | ✅ | |
 | [Github CLI](https://cli.github.com/) | gh | ✅ | ✅ |
-| [NextTrace](https://github.com/nxtrace/nexttrace-debs) | nexttrace | ✅ | ✅ |
 | [Gitea](https://gitlab.com/packaging/gitea)（[镜像](https://mirrors.ustc.edu.cn/help/packaging-gitea.html)） | gitea | ✅ | ✅ |
 | [AnyDesk](https://deb.anydesk.com/howto.html) | anydesk | ✅ | ✅ |
 | [Spotify](https://www.spotify.com/sg-zh/download/linux/) | spotify-client | ✅ | |
