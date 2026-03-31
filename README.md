@@ -46,6 +46,8 @@
 | [欧路词典](https://www.eudic.net/v4/en/app/download) | eudic | ✅ | |
 | [有道云笔记](https://note.youdao.com/note-download/) | ynote-desktop | ✅ | |
 | [MuseSounds Manager](https://musescore.org/download) | muse-sounds-manager | ✅ | |
+| [移动云盘](https://yun.139.com) | com.cmic.mcloud | ✅ | |
+| [ConvertWithMoss](https://www.mossgrabers.de/Software/ConvertWithMoss/ConvertWithMoss.html) | convertwithmoss | ✅ | |
 
 
 ### Git Releses
