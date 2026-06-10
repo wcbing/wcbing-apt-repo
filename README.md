@@ -48,6 +48,7 @@
 | [MuseSounds Manager](https://musescore.org/download) | muse-sounds-manager | ✅ | |
 | [移动云盘](https://yun.139.com) | com.cmic.mcloud | ✅ | |
 | [ConvertWithMoss](https://www.mossgrabers.de/Software/ConvertWithMoss/ConvertWithMoss.html) | convertwithmoss | ✅ | |
+| [奥维互动地图](https://www.ovital.com/download/) | ovital-map | ✅ | ✅ |
 
 
 ### Git Releses
