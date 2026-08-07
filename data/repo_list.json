@@ -8,7 +8,8 @@
     "google-chrome": {
         "repo": "https://dl.google.com/linux/chrome/deb/",
         "path": {
-            "amd64": "dists/stable/main/binary-amd64/Packages.gz"
+            "amd64": "dists/stable/main/binary-amd64/Packages.gz",
+            "arm64": "dists/stable/main/binary-arm64/Packages.gz"
         }
     },
     "google-earth": {

@@ -65,7 +65,7 @@
 | 软件仓库 | 包名 | amd64 | arm64 |
 | ------ | ---- | ----- | ----- |
 | [Mozilla Firefox](https://support.mozilla.org/zh-CN/kb/install-firefox-linux) | firefox<br />firefox_beta<br />firefox_devedition<br />firefox_nightly<br />firefox_esr<br />mozillavpn | ✅ | ✅ |
-| Google Chrome | google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable | ✅ | |
+| Google Chrome | google-chrome-stable<br />google-chrome-beta<br />google-chrome-unstable | ✅ | ✅ |
 | Google Earth | google-earth-pro-stable<br />google-earth-ec-stable | ✅ | |
 | Chrome Remote Desktop | chrome-remote-desktop | ✅ | |
 | Microsoft Edge | microsoft-edge-stable<br />microsoft-edge-beta<br />microsoft-edge-dev | ✅ | |
