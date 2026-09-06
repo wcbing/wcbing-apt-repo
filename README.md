@@ -89,6 +89,7 @@
 | [Lutris](https://lutris.net/downloads) | lutris | ✅ | ✅ |
 | [Windows 11 Clipboard History For Linux](https://github.com/gustavosett/Windows-11-Clipboard-History-For-Linux) | win11-clipboard-history | ✅ | |
 | [Antigravity](https://antigravity.google/) | antigravity | ✅ | ✅ |
+| [ChatGPT](https://chatgpt.com/download/) | chatgpt | ✅ | ✅ |
 
 
 ## 自建仓库

@@ -157,5 +157,12 @@
             "amd64": "dists/antigravity-debian/main/binary-amd64/Packages",
             "arm64": "dists/antigravity-debian/main/binary-amd64/Packages"
         }
+    },
+    "chatgpt": {
+        "repo": "https://persistent.oaistatic.com/codex-app-prod/linux/deb/",
+        "path": {
+            "amd64": "dists/stable/main/binary-amd64/Packages",
+            "arm64": "dists/stable/main/binary-amd64/Packages"
+        }
     }
 }
