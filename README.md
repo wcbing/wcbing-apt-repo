@@ -50,6 +50,7 @@
 | [ConvertWithMoss](https://www.mossgrabers.de/Software/ConvertWithMoss/ConvertWithMoss.html) | convertwithmoss | ✅ | |
 | [奥维互动地图](https://www.ovital.com/download/) | ovital-map | ✅ | ✅ |
 | [Choice金融终端](https://choice.eastmoney.com/downloads) | com.eastmoney.choice | ✅ | ✅ |
+| [WorkBuddy](https://www.codebuddy.cn/work/) | workbuddy | ✅ | ✅ |
 
 
 ### Git Releses
