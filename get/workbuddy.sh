@@ -1,9 +1,9 @@
-JSON=$(curl -s https://download.codebuddy.cn/workbuddy/saas/version.json)
-
-AMD64_VERSION=$(echo "$JSON" | jq -r '."linux-x64-deb".stable.version')
-AMD64_URL="https://download.codebuddy.cn/workbuddy/saas/linux-x64-deb/WorkBuddy-linux-x64-deb-$AMD64_VERSION.deb"
+AMD64_API_JSON=$(curl -s https://copilot.tencent.com/v2/update?platform=workbuddy-linux-x64-deb)
+AMD64_VERSION=$(echo "$AMD64_API_JSON" | jq -r '.version')
+AMD64_URL=$(echo "$AMD64_API_JSON" | jq -r '.url')
 ./check_downloader.py workbuddy "$AMD64_VERSION" "$AMD64_URL" amd64
 
-ARM64_VERSION=$(echo "$JSON" | jq -r '."linux-arm64-deb".stable.version')
-ARM64_URL="https://download.codebuddy.cn/workbuddy/saas/linux-arm64-deb/WorkBuddy-linux-arm64-deb-$ARM64_VERSION.deb"
+ARM64_API_JSON=$(curl -s https://copilot.tencent.com/v2/update?platform=workbuddy-linux-arm64-deb)
+ARM64_VERSION=$(echo "$ARM64_API_JSON" | jq -r '.version')
+ARM64_URL=$(echo "$ARM64_API_JSON" | jq -r '.url')
 ./check_downloader.py workbuddy "$ARM64_VERSION" "$ARM64_URL" arm64
